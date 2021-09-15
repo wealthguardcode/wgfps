@@ -7,7 +7,7 @@ function classNames(...classes) {
 export default function HomePage() {
   return (
     <Layout>
-      <main className="lg:relative">
+      <div className="lg:relative">
         <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
           <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
@@ -46,7 +46,7 @@ export default function HomePage() {
             alt=""
           />
         </div>
-      </main>
+      </div>
     </Layout>
   )
 }

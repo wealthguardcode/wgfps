@@ -127,7 +127,7 @@ export default function Header() {
             </div>
           </div>
 
-          <Disclosure.Panel className="md:hidden">
+          <Disclosure.Panel className="md:hidden absolute w-1/2">
             <div className="pt-2 pb-3 space-y-1">
               <div className="flex flex-col flex-grow border-r border-gray-200 pt-2 pb-4 bg-white overflow-y-auto">
                 {/* <div className="flex items-center flex-shrink-0 px-4">
