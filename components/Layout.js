@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Header from './Header'
 
 export default function Layout({ title, keywords, description, children }) {
   return (
@@ -11,6 +12,8 @@ export default function Layout({ title, keywords, description, children }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
+
+      <Header />
 
       <main>{children}</main>
 
