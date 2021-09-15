@@ -32,6 +32,136 @@ const solutions = [
     href: '#',
   },
 ]
+const policies = [
+  {
+    name: 'Term Life Insurance',
+    description: 'Learn about tips, product updates and company culture.',
+    href: '#',
+  },
+  {
+    name: 'Quality of Life Insurance',
+    description:
+      'Get all of your questions answered in our forums of contact support.',
+    href: '#',
+  },
+  {
+    name: 'Permanent Life Insurance',
+    description:
+      'Learn how to maximize our platform to get the most out of it.',
+    href: '#',
+  },
+  {
+    name: 'Universal Life Insurance',
+    description:
+      'Check out webinars with experts and learn about our annual conference.',
+    href: '#',
+  },
+  {
+    name: 'Whole Life Insurance',
+    description: 'Understand how we take your privacy seriously.',
+    href: '#',
+  },
+  {
+    name: 'Guaranteed Issue Whole Life Insurance',
+    description: 'Understand how we take your privacy seriously.',
+    href: '#',
+  },
+  {
+    name: 'Accidental Death Insurance',
+    description: 'Understand how we take your privacy seriously.',
+    href: '#',
+  },
+]
+const learn = [
+  {
+    name: 'Life Insurance',
+    description: 'Learn about tips, product updates and company culture.',
+    href: '#',
+  },
+  {
+    name: 'What is Life Insurance',
+    description:
+      'Get all of your questions answered in our forums of contact support.',
+    href: '#',
+  },
+  {
+    name: 'How Does Life Insurance Work',
+    description:
+      'Learn how to maximize our platform to get the most out of it.',
+    href: '#',
+  },
+  {
+    name: 'Choosing a Life Insurance Policy',
+    description:
+      'Check out webinars with experts and learn about our annual conference.',
+    href: '#',
+  },
+  {
+    name: 'Which Type of Life Insurance Policy Do I Need',
+    description: 'Understand how we take your privacy seriously.',
+    href: '#',
+  },
+  {
+    name: 'What to Expect When You Apply for Life Insurance',
+    description: 'Understand how we take your privacy seriously.',
+    href: '#',
+  },
+  {
+    name: 'Life Insurance Medical Exam',
+    description: 'Understand how we take your privacy seriously.',
+    href: '#',
+  },
+]
+const whyWig = [
+  {
+    name: 'Why WIG?',
+    description: 'Learn about tips, product updates and company culture.',
+    href: '#',
+  },
+  {
+    name: 'About Us',
+    description:
+      'Get all of your questions answered in our forums of contact support.',
+    href: '#',
+  },
+  {
+    name: 'Customer Reviews',
+    description:
+      'Learn how to maximize our platform to get the most out of it.',
+    href: '#',
+  },
+  {
+    name: 'Our History',
+    description:
+      'Check out webinars with experts and learn about our annual conference.',
+    href: '#',
+  },
+]
+const help = [
+  {
+    name: 'FAQ',
+    description: 'Learn about tips, product updates and company culture.',
+    href: '#',
+  },
+  {
+    name: 'Coverage Calculator',
+    description:
+      'Get all of your questions answered in our forums of contact support.',
+    href: '#',
+  },
+  {
+    name: 'COVID-19 Update',
+    description:
+      'Learn how to maximize our platform to get the most out of it.',
+    href: '#',
+  },
+  {
+    name: 'Contact Us',
+    description:
+      'Check out webinars with experts and learn about our annual conference.',
+    href: '#',
+  },
+]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -69,7 +199,7 @@ export default function Example() {
               <Popover.Panel className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-xs sm:px-0">
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                    {solutions.map((item) => (
+                    {policies.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
@@ -77,9 +207,9 @@ export default function Example() {
                         <p className="text-base font-medium text-gray-900">
                           {item.name}
                         </p>
-                        <p className="mt-1 text-sm text-gray-500">
+                        {/* <p className="mt-1 text-sm text-gray-500">
                           {item.description}
-                        </p>
+                        </p> */}
                       </a>
                     ))}
                   </div>
@@ -118,7 +248,7 @@ export default function Example() {
               <Popover.Panel className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-xs sm:px-0">
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                    {solutions.map((item) => (
+                    {learn.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
@@ -126,9 +256,9 @@ export default function Example() {
                         <p className="text-base font-medium text-gray-900">
                           {item.name}
                         </p>
-                        <p className="mt-1 text-sm text-gray-500">
+                        {/* <p className="mt-1 text-sm text-gray-500">
                           {item.description}
-                        </p>
+                        </p> */}
                       </a>
                     ))}
                   </div>
@@ -167,7 +297,7 @@ export default function Example() {
               <Popover.Panel className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-xs sm:px-0">
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                    {solutions.map((item) => (
+                    {whyWig.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
@@ -175,9 +305,9 @@ export default function Example() {
                         <p className="text-base font-medium text-gray-900">
                           {item.name}
                         </p>
-                        <p className="mt-1 text-sm text-gray-500">
+                        {/* <p className="mt-1 text-sm text-gray-500">
                           {item.description}
-                        </p>
+                        </p> */}
                       </a>
                     ))}
                   </div>
@@ -216,7 +346,7 @@ export default function Example() {
               <Popover.Panel className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-xs sm:px-0">
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                    {solutions.map((item) => (
+                    {help.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
@@ -224,9 +354,9 @@ export default function Example() {
                         <p className="text-base font-medium text-gray-900">
                           {item.name}
                         </p>
-                        <p className="mt-1 text-sm text-gray-500">
+                        {/* <p className="mt-1 text-sm text-gray-500">
                           {item.description}
-                        </p>
+                        </p> */}
                       </a>
                     ))}
                   </div>

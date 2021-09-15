@@ -4,8 +4,6 @@ import HeaderNav from './HeaderNav'
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
-import { PhoneIcon, PlayIcon } from '@heroicons/react/outline'
-
 import {
   CalendarIcon,
   ChartBarIcon,
@@ -16,98 +14,57 @@ import {
 } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'Dashboard', icon: HomeIcon, current: true, href: '#' },
+  // { name: 'Home', icon: HomeIcon, current: true, href: '/' },
   {
-    name: 'Team',
+    name: 'Our Policies',
     icon: UsersIcon,
     current: false,
     children: [
-      { name: 'Overview', href: '#' },
-      { name: 'Members', href: '#' },
-      { name: 'Calendar', href: '#' },
-      { name: 'Settings', href: '#' },
+      { name: 'Term Life Insurance', href: '#' },
+      { name: 'Quality of Life Insurance', href: '#' },
+      { name: 'Permanent Life Insurance', href: '#' },
+      { name: 'Universal Life Insurance', href: '#' },
+      { name: 'Whole Life Insurance', href: '#' },
+      { name: 'Guaranteed Issue Whole Life Insurance', href: '#' },
+      { name: 'Accidental Death Insurance', href: '#' },
     ],
   },
   {
-    name: 'Projects',
+    name: 'Learn & Plan',
     icon: FolderIcon,
     current: false,
     children: [
-      { name: 'Overview', href: '#' },
-      { name: 'Members', href: '#' },
-      { name: 'Calendar', href: '#' },
-      { name: 'Settings', href: '#' },
+      { name: 'Life Insurance', href: '#' },
+      { name: 'What is Life Insurance?', href: '#' },
+      { name: 'How Does Life Insurance Work?', href: '#' },
+      { name: 'Choosing a Life Insurance Policy', href: '#' },
+      { name: 'Which Type of Life Insurance Policy Do I Need?', href: '#' },
+      { name: 'What to Expect When You Apply for Life Insurance', href: '#' },
+      { name: 'Life Insurance Medical Exam', href: '#' },
     ],
   },
   {
-    name: 'Calendar',
+    name: 'Why WIG?',
     icon: CalendarIcon,
     current: false,
     children: [
-      { name: 'Overview', href: '#' },
-      { name: 'Members', href: '#' },
-      { name: 'Calendar', href: '#' },
-      { name: 'Settings', href: '#' },
+      { name: 'Why WIG?', href: '#' },
+      { name: 'About Us', href: '#' },
+      { name: 'Customer Reviews', href: '#' },
+      { name: 'Our History', href: '#' },
     ],
   },
   {
-    name: 'Documents',
+    name: 'Help',
     icon: InboxIcon,
     current: false,
     children: [
-      { name: 'Overview', href: '#' },
-      { name: 'Members', href: '#' },
-      { name: 'Calendar', href: '#' },
-      { name: 'Settings', href: '#' },
+      { name: 'FAQ', href: '#' },
+      { name: 'Coverage Calculator', href: '#' },
+      { name: 'COVID-19 update', href: '#' },
+      { name: 'Contact Us', href: '#' },
     ],
   },
-  {
-    name: 'Reports',
-    icon: ChartBarIcon,
-    current: false,
-    children: [
-      { name: 'Overview', href: '#' },
-      { name: 'Members', href: '#' },
-      { name: 'Calendar', href: '#' },
-      { name: 'Settings', href: '#' },
-    ],
-  },
-]
-
-const solutions = [
-  {
-    name: 'Blog',
-    description: 'Learn about tips, product updates and company culture.',
-    href: '#',
-  },
-  {
-    name: 'Help Center',
-    description:
-      'Get all of your questions answered in our forums of contact support.',
-    href: '#',
-  },
-  {
-    name: 'Guides',
-    description:
-      'Learn how to maximize our platform to get the most out of it.',
-    href: '#',
-  },
-  {
-    name: 'Events',
-    description:
-      'Check out webinars with experts and learn about our annual conference.',
-    href: '#',
-  },
-  {
-    name: 'Security',
-    description: 'Understand how we take your privacy seriously.',
-    href: '#',
-  },
-]
-
-const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
 ]
 
 function classNames(...classes) {
@@ -188,7 +145,7 @@ export default function Header() {
                       !item.children ? (
                         <div key={item.name}>
                           <a
-                            href="#"
+                            href={item.href}
                             className={classNames(
                               item.current
                                 ? 'bg-gray-100 text-gray-900'
@@ -259,29 +216,6 @@ export default function Header() {
                   </nav>
                 </div>
               </div>
-
-              {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
-              {/* <a
-                href="#"
-                className="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6">
-                Our Policies
-              </a>
-              <a
-                href="#"
-                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6">
-                Learn & Plan
-              </a>
-              <a
-                href="#"
-                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6">
-                Why WIG?
-              </a>
-              <a
-                href="#"
-                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6">
-                Help
-              </a>
-            </div> */}
               <div className="pt-4 pb-3 border-t border-gray-200"></div>
             </div>
           </Disclosure.Panel>
