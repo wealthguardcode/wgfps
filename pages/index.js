@@ -149,7 +149,7 @@ export default function HomePage() {
       {/* Quote Section */}
       <div className="h-3/4 bg-white mx-10 my-24">
         <div className="bg-gray-300 grid grid-cols-2 p-10">
-          <div className="flex-1 flex flex-col mt-2 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+          <div className="col-span-1 flex-1 flex flex-col mt-2 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
             <div className="mx-auto w-full max-w-sm lg:w-96">
               <h2 className=" text-3xl font-extrabold text-gray-900">
                 Get your estimate in seconds.
@@ -157,101 +157,129 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="lg:block relative w-full flex-1">
-            <div className="grid grid-cols-3">
-              <div className="inline-block">
-                <RadioGroup value={selectedSex} onChange={setSelectedSex}>
-                  <RadioGroup.Label className="sr-only">
-                    Gender
-                  </RadioGroup.Label>
-                  <div className="space-y-4">
-                    {gender.map((plan) => (
-                      <RadioGroup.Option
-                        key={plan.name}
-                        value={plan}
-                        className={({ active }) =>
-                          classNames(
-                            active
-                              ? 'ring-1 ring-offset-2 ring-indigo-500'
-                              : '',
-                            'relative block rounded-lg border border-gray-300 bg-white shadow-sm px-6 py-4 cursor-pointer hover:border-gray-400 sm:flex sm:justify-between focus:outline-none'
-                          )
-                        }>
-                        {({ checked }) => (
-                          <>
-                            <div className="text-sm">
-                              <RadioGroup.Label
-                                as="p"
-                                className="font-medium text-gray-900">
-                                {plan.name}
-                              </RadioGroup.Label>
-                            </div>
-
-                            <div
-                              className={classNames(
-                                checked
-                                  ? 'border-indigo-500'
-                                  : 'border-transparent',
-                                'absolute -inset-px rounded-lg border-2 pointer-events-none'
-                              )}
-                              aria-hidden="true"
-                            />
-                          </>
-                        )}
-                      </RadioGroup.Option>
-                    ))}
-                  </div>
-                </RadioGroup>
+          <form action="#" method="POST">
+            <div className="grid grid-cols-6 gap-6">
+              <div className="col-span-6 sm:col-span-3">
+                <label
+                  htmlFor="first-name"
+                  className="block text-sm font-medium text-gray-700">
+                  First name
+                </label>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  autoComplete="given-name"
+                  className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                />
               </div>
 
-              <div className="flex items-center">
-                <RadioGroup value={selectedHealth} onChange={setSelectedHealth}>
-                  <RadioGroup.Label className="sr-only">
-                    Server size
-                  </RadioGroup.Label>
-                  <div className="space-y-4">
-                    {health.map((plan) => (
-                      <RadioGroup.Option
-                        key={plan.name}
-                        value={plan}
-                        className={({ active }) =>
-                          classNames(
-                            active
-                              ? 'ring-1 ring-offset-2 ring-indigo-500'
-                              : '',
-                            'relative block rounded-lg border border-gray-300 bg-white shadow-sm px-6 py-4 cursor-pointer hover:border-gray-400 sm:flex sm:justify-between focus:outline-none'
-                          )
-                        }>
-                        {({ checked }) => (
-                          <>
-                            <div className="flex items-center">
-                              <div className="text-sm">
-                                <RadioGroup.Label
-                                  as="p"
-                                  className="font-medium text-gray-900">
-                                  {plan.name}
-                                </RadioGroup.Label>
-                              </div>
-                            </div>
+              <div className="col-span-6 sm:col-span-3">
+                <label
+                  htmlFor="last-name"
+                  className="block text-sm font-medium text-gray-700">
+                  Last name
+                </label>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  autoComplete="family-name"
+                  className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                />
+              </div>
 
-                            <div
-                              className={classNames(
-                                checked
-                                  ? 'border-indigo-500'
-                                  : 'border-transparent',
-                                'absolute -inset-px rounded-lg border-2 pointer-events-none'
-                              )}
-                              aria-hidden="true"
-                            />
-                          </>
-                        )}
-                      </RadioGroup.Option>
-                    ))}
-                  </div>
-                </RadioGroup>
+              <div className="col-span-6 sm:col-span-4">
+                <label
+                  htmlFor="email-address"
+                  className="block text-sm font-medium text-gray-700">
+                  Email address
+                </label>
+                <input
+                  type="text"
+                  name="email-address"
+                  id="email-address"
+                  autoComplete="email"
+                  className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                />
+              </div>
+
+              <div className="col-span-6 sm:col-span-3">
+                <label
+                  htmlFor="country"
+                  className="block text-sm font-medium text-gray-700">
+                  Country / Region
+                </label>
+                <select
+                  id="country"
+                  name="country"
+                  autoComplete="country"
+                  className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>Mexico</option>
+                </select>
+              </div>
+
+              <div className="col-span-6">
+                <label
+                  htmlFor="street-address"
+                  className="block text-sm font-medium text-gray-700">
+                  Street address
+                </label>
+                <input
+                  type="text"
+                  name="street-address"
+                  id="street-address"
+                  autoComplete="street-address"
+                  className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                />
+              </div>
+
+              <div className="col-span-6 sm:col-span-6 lg:col-span-2">
+                <label
+                  htmlFor="city"
+                  className="block text-sm font-medium text-gray-700">
+                  City
+                </label>
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                />
+              </div>
+
+              <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+                <label
+                  htmlFor="state"
+                  className="block text-sm font-medium text-gray-700">
+                  State / Province
+                </label>
+                <input
+                  type="text"
+                  name="state"
+                  id="state"
+                  className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                />
+              </div>
+
+              <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+                <label
+                  htmlFor="postal-code"
+                  className="block text-sm font-medium text-gray-700">
+                  ZIP / Postal
+                </label>
+                <input
+                  type="text"
+                  name="postal-code"
+                  id="postal-code"
+                  autoComplete="postal-code"
+                  className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                />
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
 
