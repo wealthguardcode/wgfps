@@ -55,6 +55,45 @@ const perks = [
   },
 ]
 
+const faqs = [
+  {
+    id: 1,
+    question: "What's the best thing about the US?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    id: 2,
+    question: "What's the best thing about the US?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    id: 3,
+    question: "What's the best thing about the US?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    id: 4,
+    question: "What's the best thing about the US?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    id: 5,
+    question: "What's the best thing about the US?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    id: 6,
+    question: "What's the best thing about the US?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+]
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -415,6 +454,53 @@ export default function HomePage() {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FAQs */}
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+          <div className="max-w-2xl lg:mx-auto lg:text-center">
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              Frequently asked questions
+            </h2>
+            <p className="mt-4 text-gray-500">
+              Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
+              Malesuada adipiscing sagittis vel nulla nec. Urna, sed a lectus
+              elementum blandit et.
+            </p>
+          </div>
+          <div className="mt-20">
+            <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-10">
+              {faqs.map((faq) => (
+                <div key={faq.id}>
+                  <dt className="font-semibold text-gray-900">
+                    {faq.question}
+                  </dt>
+                  <dd className="mt-3 text-gray-500">{faq.answer}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      {/* CTA */}
+      <div className="bg-indigo-50 mb-12 md:mb-16">
+        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
+          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">
+            <span className="block">Ready to dive in?</span>
+            <span className="block text-indigo-600">Get started today.</span>
+          </h2>
+          <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+            <div className="inline-flex rounded-md shadow">
+              <a
+                href="#"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                Get started
+              </a>
             </div>
           </div>
         </div>
