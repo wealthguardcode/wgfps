@@ -1,7 +1,16 @@
 import Layout from '../../components/Layout'
-import data from '../../lib/insurance'
+import { getPolicies } from '../../lib/data'
 
-export default function Policies() {
+export const getStaticProps = async () => {
+  const data = await getPolicies()
+  return {
+    props: {
+      data,
+    },
+  }
+}
+
+export default function Policies({ data }) {
   console.log(data)
   return (
     <Layout>
@@ -31,7 +40,7 @@ export default function Policies() {
       {/* Policies GRID */}
       <div className="mx-20 my-32">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {data.map((policy) => (
+          {data.policies.map((policy) => (
             <div
               key={policy.id}
               className="p-3 border rounded-xl hover:bg-blue-200 hover:border-blue-300 hover:border-8">
