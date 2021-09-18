@@ -1,5 +1,6 @@
 import Layout from '../../components/Layout'
 import { getPolicies } from '../../lib/data'
+import Link from 'next/link'
 
 export const getStaticProps = async () => {
   const data = await getPolicies()
@@ -49,9 +50,11 @@ export default function Policies({ data }) {
               <p className="line-clamp-3 my-3">
                 {policy.description.replace(/<[^>]+>/g, ' ')}
               </p>
-              <button className="p-2 bg-black text-white rounded hover:bg-gray-700 hover:cursor-pointer">
-                Learn more
-              </button>
+              <Link href={policy.slug} passHref>
+                <button className="p-2 bg-black text-white rounded hover:bg-gray-700 hover:cursor-pointer">
+                  Learn more
+                </button>
+              </Link>
             </div>
           ))}
         </div>
