@@ -2,36 +2,6 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
-const solutions = [
-  {
-    name: 'Blog',
-    description: 'Learn about tips, product updates and company culture.',
-    href: '#',
-  },
-  {
-    name: 'Help Center',
-    description:
-      'Get all of your questions answered in our forums of contact support.',
-    href: '#',
-  },
-  {
-    name: 'Guides',
-    description:
-      'Learn how to maximize our platform to get the most out of it.',
-    href: '#',
-  },
-  {
-    name: 'Events',
-    description:
-      'Check out webinars with experts and learn about our annual conference.',
-    href: '#',
-  },
-  {
-    name: 'Security',
-    description: 'Understand how we take your privacy seriously.',
-    href: '#',
-  },
-]
 const policies = [
   {
     name: 'Term Life Insurance',
@@ -70,6 +40,11 @@ const policies = [
     name: 'Accidental Death Insurance',
     description: 'Understand how we take your privacy seriously.',
     href: '#',
+  },
+  {
+    name: 'All Policies',
+    description: 'Understand how we take your privacy seriously.',
+    href: '/insurance/policies',
   },
 ]
 const learn = [
