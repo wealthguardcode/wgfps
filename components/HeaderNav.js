@@ -5,135 +5,100 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 const policies = [
   {
     name: 'Term Life Insurance',
-    description: 'Learn about tips, product updates and company culture.',
-    href: '#',
+    href: '/insurance/term-life-insurance',
   },
   {
     name: 'Quality of Life Insurance',
-    description:
-      'Get all of your questions answered in our forums of contact support.',
-    href: '#',
+    href: '/insurance/quality-of-life-insurance',
   },
   {
     name: 'Permanent Life Insurance',
-    description:
-      'Learn how to maximize our platform to get the most out of it.',
-    href: '#',
+    href: '/insurance/permanent-life-insurance',
   },
   {
     name: 'Universal Life Insurance',
-    description:
-      'Check out webinars with experts and learn about our annual conference.',
-    href: '#',
+    href: '/insurance/universal-life-insurance',
   },
   {
     name: 'Whole Life Insurance',
-    description: 'Understand how we take your privacy seriously.',
-    href: '#',
+    href: '/insurance/whole-life-insurance',
   },
   {
     name: 'Guaranteed Issue Whole Life Insurance',
-    description: 'Understand how we take your privacy seriously.',
-    href: '#',
+    href: '/insurance/guaranteed-issue-whole-life-insurance',
   },
   {
     name: 'Accidental Death Insurance',
-    description: 'Understand how we take your privacy seriously.',
-    href: '#',
+    href: '/insurance/accidental-death-insurance',
   },
   {
     name: 'All Policies',
-    description: 'Understand how we take your privacy seriously.',
     href: '/insurance/policies',
   },
 ]
 const learn = [
   {
     name: 'Life Insurance',
-    description: 'Learn about tips, product updates and company culture.',
     href: '#',
   },
   {
     name: 'What is Life Insurance',
-    description:
-      'Get all of your questions answered in our forums of contact support.',
     href: '#',
   },
   {
     name: 'How Does Life Insurance Work',
-    description:
-      'Learn how to maximize our platform to get the most out of it.',
     href: '#',
   },
   {
     name: 'Choosing a Life Insurance Policy',
-    description:
-      'Check out webinars with experts and learn about our annual conference.',
     href: '#',
   },
   {
     name: 'Which Type of Life Insurance Policy Do I Need',
-    description: 'Understand how we take your privacy seriously.',
     href: '#',
   },
   {
     name: 'What to Expect When You Apply for Life Insurance',
-    description: 'Understand how we take your privacy seriously.',
     href: '#',
   },
   {
     name: 'Life Insurance Medical Exam',
-    description: 'Understand how we take your privacy seriously.',
     href: '#',
   },
 ]
 const whyWig = [
   {
     name: 'Why WIG?',
-    description: 'Learn about tips, product updates and company culture.',
     href: '#',
   },
   {
     name: 'About Us',
-    description:
-      'Get all of your questions answered in our forums of contact support.',
     href: '#',
   },
   {
     name: 'Customer Reviews',
-    description:
-      'Learn how to maximize our platform to get the most out of it.',
     href: '#',
   },
   {
     name: 'Our History',
-    description:
-      'Check out webinars with experts and learn about our annual conference.',
     href: '#',
   },
 ]
 const help = [
   {
     name: 'FAQ',
-    description: 'Learn about tips, product updates and company culture.',
     href: '#',
   },
   {
     name: 'Coverage Calculator',
-    description:
-      'Get all of your questions answered in our forums of contact support.',
     href: '#',
   },
   {
     name: 'COVID-19 Update',
-    description:
-      'Learn how to maximize our platform to get the most out of it.',
     href: '#',
   },
   {
     name: 'Contact Us',
-    description:
-      'Check out webinars with experts and learn about our annual conference.',
     href: '#',
   },
 ]
@@ -182,9 +147,6 @@ export default function Example() {
                         <p className="text-base font-medium text-gray-900">
                           {item.name}
                         </p>
-                        {/* <p className="mt-1 text-sm text-gray-500">
-                          {item.description}
-                        </p> */}
                       </a>
                     ))}
                   </div>
@@ -231,9 +193,6 @@ export default function Example() {
                         <p className="text-base font-medium text-gray-900">
                           {item.name}
                         </p>
-                        {/* <p className="mt-1 text-sm text-gray-500">
-                          {item.description}
-                        </p> */}
                       </a>
                     ))}
                   </div>
@@ -280,9 +239,6 @@ export default function Example() {
                         <p className="text-base font-medium text-gray-900">
                           {item.name}
                         </p>
-                        {/* <p className="mt-1 text-sm text-gray-500">
-                          {item.description}
-                        </p> */}
                       </a>
                     ))}
                   </div>
@@ -329,9 +285,6 @@ export default function Example() {
                         <p className="text-base font-medium text-gray-900">
                           {item.name}
                         </p>
-                        {/* <p className="mt-1 text-sm text-gray-500">
-                          {item.description}
-                        </p> */}
                       </a>
                     ))}
                   </div>
