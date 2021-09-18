@@ -11,7 +11,7 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: { width: ['responsive', 'hover', 'focus'] },
   },
   plugins: [
     require('@tailwindcss/forms'),
