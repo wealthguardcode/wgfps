@@ -20,13 +20,32 @@ const navigation = [
     icon: UsersIcon,
     current: false,
     children: [
-      { name: 'Term Life Insurance', href: '#' },
-      { name: 'Quality of Life Insurance', href: '#' },
-      { name: 'Permanent Life Insurance', href: '#' },
-      { name: 'Universal Life Insurance', href: '#' },
-      { name: 'Whole Life Insurance', href: '#' },
-      { name: 'Guaranteed Issue Whole Life Insurance', href: '#' },
-      { name: 'Accidental Death Insurance', href: '#' },
+      { name: 'Term Life Insurance', href: '/insurance/term-life-insurance' },
+      {
+        name: 'Quality of Life Insurance',
+        href: '/insurance/quality-of-life-insurance',
+      },
+      {
+        name: 'Permanent Life Insurance',
+        href: '/insurance/permanent-life-insurance',
+      },
+      {
+        name: 'Universal Life Insurance',
+        href: '/insurance/universal-life-insurance',
+      },
+      { name: 'Whole Life Insurance', href: '/insurance/whole-life-insurance' },
+      {
+        name: 'Guaranteed Issue Whole Life Insurance',
+        href: '/insurance/guaranteed-issue-whole-life-insurance',
+      },
+      {
+        name: 'Accidental Death Insurance',
+        href: '/insurance/accidental-death-insurance',
+      },
+      {
+        name: 'All Policies',
+        href: '/insurance/policies',
+      },
     ],
   },
   {
@@ -36,7 +55,7 @@ const navigation = [
     children: [
       { name: 'Life Insurance', href: '#' },
       { name: 'What is Life Insurance?', href: '#' },
-      { name: 'How Does Life Insurance Work?', href: '#' },
+      { name: 'How Does Life Insurance Work?', href: '/how-it-works' },
       { name: 'Choosing a Life Insurance Policy', href: '#' },
       { name: 'Which Type of Life Insurance Policy Do I Need?', href: '#' },
       { name: 'What to Expect When You Apply for Life Insurance', href: '#' },

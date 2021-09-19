@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { RadioGroup } from '@headlessui/react'
 import { ExternalLinkIcon } from '@heroicons/react/solid'
 import Layout from '../components/Layout'
+import Link from 'next/link'
 
 const gender = [
   {
@@ -365,7 +366,7 @@ export default function HomePage() {
         <div className="relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
           <img
             className="w-full h-full object-cover"
-            src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&sat=-100"
+            src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"
             alt=""
           />
           <div
@@ -386,15 +387,15 @@ export default function HomePage() {
             </p>
             <div className="mt-8">
               <div className="inline-flex rounded-md shadow">
-                <a
-                  href="#"
-                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
-                  Learn more
-                  <ExternalLinkIcon
-                    className="-mr-1 ml-3 h-5 w-5 text-gray-400"
-                    aria-hidden="true"
-                  />
-                </a>
+                <Link href="/how-it-works">
+                  <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
+                    Learn more
+                    <ExternalLinkIcon
+                      className="-mr-1 ml-3 h-5 w-5 text-gray-400"
+                      aria-hidden="true"
+                    />
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -474,7 +475,7 @@ export default function HomePage() {
                   <a
                     href="#"
                     className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50 ">
-                    Learn more
+                    Check my price
                     <ExternalLinkIcon
                       className="-mr-1 ml-3 h-5 w-5 text-gray-400"
                       aria-hidden="true"

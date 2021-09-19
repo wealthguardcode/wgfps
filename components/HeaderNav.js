@@ -42,23 +42,23 @@ const learn = [
     href: '#',
   },
   {
-    name: 'What is Life Insurance',
+    name: 'What is Life Insurance?',
     href: '#',
   },
   {
-    name: 'How Does Life Insurance Work',
-    href: '#',
+    name: 'How Does Life Insurance Work?',
+    href: '/how-it-works',
   },
   {
     name: 'Choosing a Life Insurance Policy',
     href: '#',
   },
   {
-    name: 'Which Type of Life Insurance Policy Do I Need',
+    name: 'Which Type of Life Insurance Policy Do I Need?',
     href: '#',
   },
   {
-    name: 'What to Expect When You Apply for Life Insurance',
+    name: 'What to Expect When You Apply for Life Insurance?',
     href: '#',
   },
   {
