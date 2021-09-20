@@ -110,9 +110,7 @@ export default function HomePage() {
           <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span className="block xl:inline">Life insurance</span>{' '}
-              <span className="block text-indigo-600 xl:inline">
-                made easy.
-              </span>
+              <span className="block text-blue-600 xl:inline">made easy.</span>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
@@ -121,16 +119,16 @@ export default function HomePage() {
             </p>
             <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
-                <a
-                  href="#"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                  Check my price
-                </a>
+                <Link href="/estimate" passHref>
+                  <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
+                    Check my price
+                  </a>
+                </Link>
               </div>
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
                   Start applying
                 </a>
               </div>
@@ -355,15 +353,15 @@ export default function HomePage() {
               </div>
               <div className="py-8">
                 <div className="inline-flex rounded-md shadow float-right">
-                  <a
-                    href="#"
-                    className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50 ">
-                    Check my price
-                    <ExternalLinkIcon
-                      className="-mr-1 ml-3 h-5 w-5 text-gray-400"
-                      aria-hidden="true"
-                    />
-                  </a>
+                  <Link href="/estimate" passHref>
+                    <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50 ">
+                      Check my price
+                      <ExternalLinkIcon
+                        className="-mr-1 ml-3 h-5 w-5 text-gray-400"
+                        aria-hidden="true"
+                      />
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -400,17 +398,17 @@ export default function HomePage() {
       </div>
 
       {/* CTA */}
-      <div className="bg-indigo-50 mb-12 md:mb-16">
+      <div className="bg-blue-50 mb-12 md:mb-16">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">
             <span className="block">Ready to dive in?</span>
-            <span className="block text-indigo-600">Get started today.</span>
+            <span className="block text-blue-600">Get started today.</span>
           </h2>
           <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
             <div className="inline-flex rounded-md shadow">
               <a
                 href="#"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
                 Get started
               </a>
             </div>

@@ -55,7 +55,7 @@ export default function Policies({ data }) {
                 {policy.description.replace(/<[^>]+>/g, ' ')}
               </p>
               <Link href={policy.slug} passHref>
-                <button className="p-2 bg-black text-white rounded hover:bg-gray-800 hover:cursor-pointer">
+                <button className="p-2 bg-gray-900 text-white rounded hover:bg-gray-800 hover:cursor-pointer">
                   Learn more
                 </button>
               </Link>

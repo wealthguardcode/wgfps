@@ -100,7 +100,7 @@ export default function Header() {
               <div className="flex">
                 <div className="-ml-2 mr-2 flex items-center md:hidden">
                   {/* Mobile menu button */}
-                  <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
                       <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -114,33 +114,35 @@ export default function Header() {
                     <a>
                       <img
                         className="block lg:hidden h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                        src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
                         alt="Workflow"
                       />
                       <img
                         className="hidden lg:block h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
+                        src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
                         alt="Workflow"
                       />
                     </a>
                   </Link>
                 </div>
                 <div className="hidden md:ml-6 md:flex md:space-x-8">
-                  {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
+                  {/* Current: "border-blue-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <HeaderNav />
                 </div>
               </div>
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <button
-                    type="button"
-                    className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium  text-white bg-indigo-600 shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                    {/* <PlusSmIcon
+                  <Link href="/estimate" passHref>
+                    <button
+                      type="button"
+                      className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded text-white bg-blue-600 shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                      {/* <PlusSmIcon
                       className="-ml-1 mr-2 h-5 w-5"
                       aria-hidden="true"
                     /> */}
-                    <span>Check my price</span>
-                  </button>
+                      <span>Check my price</span>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -152,7 +154,7 @@ export default function Header() {
                 {/* <div className="flex items-center flex-shrink-0 px-4">
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
+                    src="https://tailwindui.com/img/logos/workflow-logo-blue-600-mark-gray-800-text.svg"
                     alt="Workflow"
                   />
                 </div> */}
@@ -195,7 +197,7 @@ export default function Header() {
                                   item.current
                                     ? 'bg-gray-100 text-gray-900'
                                     : 'bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900',
-                                  'group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500'
+                                  'group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'
                                 )}>
                                 <item.icon
                                   className="mr-3 flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500"
