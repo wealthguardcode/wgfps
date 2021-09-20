@@ -147,8 +147,8 @@ export default function HomePage() {
       </div>
 
       {/* Quote Section */}
-      <div className="h-3/4 bg-white mx-10 my-24">
-        <div className="bg-gray-300 grid grid-cols-1 md:grid-cols-2 p-10">
+      <div className="h-3/4 w-full bg-white md:mx-10 my-24">
+        <div className="bg-gray-50 grid grid-cols-1 md:grid-cols-2  md:p-10">
           <div className="col-span-1 flex-1 flex flex-col mt-2 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
             <div className="mx-auto  w-full max-w-sm lg:w-96">
               <h2 className="lg:text-4xl text-3xl font-extrabold text-gray-900">
@@ -157,7 +157,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="h-auto mt-5">
+          <div className="h-auto w-full mt-8 mb-12 md:mt-5 md:mb-8">
             <script
               className="nqwq Ghwi"
               type="text/javascript"
