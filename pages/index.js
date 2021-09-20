@@ -3,6 +3,7 @@ import { RadioGroup } from '@headlessui/react'
 import { ExternalLinkIcon } from '@heroicons/react/solid'
 import Layout from '../components/Layout'
 import Link from 'next/link'
+import Script from 'next/script'
 
 const gender = [
   {
@@ -48,7 +49,7 @@ const perks = [
       'We understand that when your product arrives you might not particularly like it, or you ordered the wrong thing. Conditions apply here.',
   },
   {
-    name: 'Unlimited free delivery, all year round',
+    name: 'Lorem ipsum, lorem anuit.',
     imageSrc:
       'https://tailwindui.com/img/ecommerce/icons/icon-delivery-light.svg',
     description:
@@ -158,129 +159,19 @@ export default function HomePage() {
             </div>
           </div>
 
-          <form action="#" method="POST">
-            <div className="grid grid-cols-6 gap-6">
-              <div className="col-span-6 sm:col-span-3">
-                <label
-                  htmlFor="first-name"
-                  className="block text-sm font-medium text-gray-700">
-                  First name
-                </label>
-                <input
-                  type="text"
-                  name="first-name"
-                  id="first-name"
-                  autoComplete="given-name"
-                  className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                />
-              </div>
-
-              <div className="col-span-6 sm:col-span-3">
-                <label
-                  htmlFor="last-name"
-                  className="block text-sm font-medium text-gray-700">
-                  Last name
-                </label>
-                <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  autoComplete="family-name"
-                  className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                />
-              </div>
-
-              <div className="col-span-6 sm:col-span-4">
-                <label
-                  htmlFor="email-address"
-                  className="block text-sm font-medium text-gray-700">
-                  Email address
-                </label>
-                <input
-                  type="text"
-                  name="email-address"
-                  id="email-address"
-                  autoComplete="email"
-                  className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                />
-              </div>
-
-              <div className="col-span-6 sm:col-span-3">
-                <label
-                  htmlFor="country"
-                  className="block text-sm font-medium text-gray-700">
-                  Country / Region
-                </label>
-                <select
-                  id="country"
-                  name="country"
-                  autoComplete="country"
-                  className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                  <option>United States</option>
-                  <option>Canada</option>
-                  <option>Mexico</option>
-                </select>
-              </div>
-
-              <div className="col-span-6">
-                <label
-                  htmlFor="street-address"
-                  className="block text-sm font-medium text-gray-700">
-                  Street address
-                </label>
-                <input
-                  type="text"
-                  name="street-address"
-                  id="street-address"
-                  autoComplete="street-address"
-                  className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                />
-              </div>
-
-              <div className="col-span-6 sm:col-span-6 lg:col-span-2">
-                <label
-                  htmlFor="city"
-                  className="block text-sm font-medium text-gray-700">
-                  City
-                </label>
-                <input
-                  type="text"
-                  name="city"
-                  id="city"
-                  className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                />
-              </div>
-
-              <div className="col-span-6 sm:col-span-3 lg:col-span-2">
-                <label
-                  htmlFor="state"
-                  className="block text-sm font-medium text-gray-700">
-                  State / Province
-                </label>
-                <input
-                  type="text"
-                  name="state"
-                  id="state"
-                  className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                />
-              </div>
-
-              <div className="col-span-6 sm:col-span-3 lg:col-span-2">
-                <label
-                  htmlFor="postal-code"
-                  className="block text-sm font-medium text-gray-700">
-                  ZIP / Postal
-                </label>
-                <input
-                  type="text"
-                  name="postal-code"
-                  id="postal-code"
-                  autoComplete="postal-code"
-                  className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                />
-              </div>
-            </div>
-          </form>
+          <div className="h-auto">
+            {/* <Script
+              src="//wq.ninjaquoter.com/Ghwisqf9yUYsqKxM7A2dBmYh.js"
+              async
+              className="nqwq Ghwi"
+              type="text/javascript"
+            /> */}
+            <script
+              className="nqwq Ghwi"
+              type="text/javascript"
+              src="//wq.ninjaquoter.com/Ghwisqf9yUYsqKxM7A2dBmYh.js"
+              async></script>
+          </div>
         </div>
       </div>
 
