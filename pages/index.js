@@ -1,9 +1,7 @@
 import { useState } from 'react'
-import { RadioGroup } from '@headlessui/react'
 import { ExternalLinkIcon } from '@heroicons/react/solid'
 import Layout from '../components/Layout'
 import Link from 'next/link'
-import Script from 'next/script'
 
 const gender = [
   {
@@ -160,12 +158,6 @@ export default function HomePage() {
           </div>
 
           <div className="h-auto mt-5">
-            {/* <Script
-              src="//wq.ninjaquoter.com/Ghwisqf9yUYsqKxM7A2dBmYh.js"
-              async
-              className="nqwq Ghwi"
-              type="text/javascript"
-            /> */}
             <script
               className="nqwq Ghwi"
               type="text/javascript"
