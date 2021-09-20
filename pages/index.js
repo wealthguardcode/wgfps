@@ -153,7 +153,7 @@ export default function HomePage() {
         <div className="bg-gray-300 grid grid-cols-1 md:grid-cols-2 p-10">
           <div className="col-span-1 flex-1 flex flex-col mt-2 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
             <div className="mx-auto  w-full max-w-sm lg:w-96">
-              <h2 className=" text-3xl font-extrabold text-gray-900">
+              <h2 className="lg:text-4xl text-3xl font-extrabold text-gray-900">
                 Get your estimate in seconds.
               </h2>
             </div>
