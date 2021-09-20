@@ -39,13 +39,17 @@ export default function Policies({ data }) {
       </div>
 
       {/* Policies GRID */}
-      <div className="mx-20 my-32">
+      <div className="mx-2 md:mx-20 my-16 md:my-32">
         <div className="grid grid-cols-1 gap-6 ">
           {data.policies.map((policy) => (
             <div
               key={policy.id}
-              className="p-12 border rounded-xl hover:shadow-xl hover:border-gray-400 hover:border-8">
-              <h1 className="my-2 text-3xl font-extrabold">{policy.title}</h1>
+              className="p-6 md:p-12 border rounded-xl hover:shadow-xl hover:border-gray-400 hover:border-8">
+              <Link href={policy.slug} passHref>
+                <h1 className="my-2 text-3xl font-extrabold hover:cursor-pointer">
+                  {policy.title}
+                </h1>
+              </Link>
 
               <p className="text-lg text-gray-600 my-3">
                 {policy.description.replace(/<[^>]+>/g, ' ')}
