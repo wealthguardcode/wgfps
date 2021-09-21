@@ -73,7 +73,7 @@ const whyWig = [
   },
   {
     name: 'About Us',
-    href: '#',
+    href: '/about-us',
   },
   {
     name: 'Customer Reviews',
@@ -87,11 +87,11 @@ const whyWig = [
 const help = [
   {
     name: 'FAQ',
-    href: '#',
+    href: '/faq',
   },
   {
-    name: 'Coverage Calculator',
-    href: '#',
+    name: 'Coverage Estimate',
+    href: '/estimate',
   },
   {
     name: 'COVID-19 Update',
@@ -99,7 +99,7 @@ const help = [
   },
   {
     name: 'Contact Us',
-    href: '#',
+    href: '/contact-us',
   },
 ]
 

@@ -68,7 +68,7 @@ const navigation = [
     current: false,
     children: [
       { name: 'Why WIG?', href: '#' },
-      { name: 'About Us', href: '#' },
+      { name: 'About Us', href: '/about-us' },
       { name: 'Customer Reviews', href: '#' },
       { name: 'Our History', href: '#' },
     ],
@@ -78,10 +78,10 @@ const navigation = [
     icon: InboxIcon,
     current: false,
     children: [
-      { name: 'FAQ', href: '#' },
-      { name: 'Coverage Calculator', href: '#' },
+      { name: 'FAQ', href: '/faq' },
+      { name: 'Coverage Estimate', href: '/estimate' },
       { name: 'COVID-19 update', href: '#' },
-      { name: 'Contact Us', href: '#' },
+      { name: 'Contact Us', href: '/contact-us' },
     ],
   },
 ]
@@ -149,7 +149,7 @@ export default function Header() {
           </div>
 
           <Disclosure.Panel className="md:hidden absolute w-3/4 z-10">
-            <div className="pt-2 pb-3 space-y-1 ">
+            <div className="pt-0 pb-3 space-y-1 ">
               <div className="flex flex-col flex-grow border-r border-gray-200 pt-2 pb-4 bg-white overflow-y-auto ">
                 {/* <div className="flex items-center flex-shrink-0 px-4">
                   <img

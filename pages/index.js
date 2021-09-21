@@ -126,11 +126,11 @@ export default function HomePage() {
                 </Link>
               </div>
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-                <a
-                  href="#"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
-                  Start applying
-                </a>
+                <Link href="/about-us">
+                  <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                    About Us
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -401,16 +401,16 @@ export default function HomePage() {
       <div className="bg-blue-50 mb-12 md:mb-16">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">
-            <span className="block">Ready to dive in?</span>
-            <span className="block text-blue-600">Get started today.</span>
+            <span className="block">Ready to learn more?</span>
+            <span className="block text-blue-600">See our policies.</span>
           </h2>
           <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
             <div className="inline-flex rounded-md shadow">
-              <a
-                href="#"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
-                Get started
-              </a>
+              <Link href="/insurance/policies">
+                <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                  Learn more
+                </a>
+              </Link>
             </div>
           </div>
         </div>
