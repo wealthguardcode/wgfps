@@ -3,55 +3,34 @@ import { ExternalLinkIcon } from '@heroicons/react/solid'
 import Layout from '../components/Layout'
 import Link from 'next/link'
 
-const gender = [
-  {
-    name: 'Male',
-  },
-  {
-    name: 'Female',
-  },
-]
-
-const health = [
-  {
-    name: 'Average',
-  },
-  {
-    name: 'Great',
-  },
-  {
-    name: 'Excellent',
-  },
-]
-
 const perks = [
   {
-    name: 'Unlimited free delivery, all year round',
+    name: 'Lorem ipsum dolor',
     imageSrc:
       'https://tailwindui.com/img/ecommerce/icons/icon-delivery-light.svg',
     description:
-      'Name another place that offers year long free delivery? We’ll be waiting. Order now and you’ll get delivery absolutely free.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis risus diam, id fermentum ante mattis a.',
   },
   {
-    name: '10-year warranty',
+    name: 'Aliquam mollis risus diam',
     imageSrc:
       'https://tailwindui.com/img/ecommerce/icons/icon-warranty-light.svg',
     description:
-      'We have a 10 year warranty with every product that you purchase, whether thats a new pen or organizer you can be sure we’ll ',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis risus diam, id fermentum ante mattis a. ',
   },
   {
-    name: 'Exchanges',
+    name: 'Mauris efficitur ligula',
     imageSrc:
       'https://tailwindui.com/img/ecommerce/icons/icon-returns-light.svg',
     description:
-      'We understand that when your product arrives you might not particularly like it, or you ordered the wrong thing. Conditions apply here.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis risus diam, id fermentum ante mattis a.',
   },
   {
-    name: 'Lorem ipsum, lorem anuit.',
+    name: 'Lorem ipsum, lorem anuit',
     imageSrc:
       'https://tailwindui.com/img/ecommerce/icons/icon-delivery-light.svg',
     description:
-      'Name another place that offers year long free delivery? We’ll be waiting. Order now and you’ll get delivery absolutely free.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis risus diam, id fermentum ante mattis a.',
   },
 ]
 
@@ -99,9 +78,6 @@ function classNames(...classes) {
 }
 
 export default function HomePage() {
-  const [selectedSex, setSelectedSex] = useState(gender[0])
-  const [selectedHealth, setSelectedHealth] = useState(health[0])
-
   return (
     <Layout>
       {/* Hero Section */}
