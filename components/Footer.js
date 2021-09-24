@@ -1,27 +1,23 @@
+import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
+import Link from 'next/link'
+
 const navigation = {
   resources: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
+    { name: 'All Policies', href: '/insurance/policies' },
+    { name: 'Coverage Estimate', href: '/estimate' },
+    { name: 'How It Works', href: '/how-it-works' },
+    { name: 'Choosing a Policy', href: '/choosing-policy' },
   ],
   company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: 'Why WIG?', href: 'why-wig' },
+    { name: 'About Us', href: '/about-us' },
+    { name: 'Our History', href: '/our-history' },
+    { name: 'FAQ', href: '/faq' },
   ],
   legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
-  ],
-  contact: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
+    { name: 'Contact', href: '/contact-us' },
+    { name: 'Privacy', href: '/privacy' },
+    { name: 'Terms', href: '/terms' },
   ],
   social: [
     {
@@ -97,21 +93,26 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
-            <img
-              className="h-10"
-              src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
-              alt="Company name"
-            />
+            <Link href="/" passHref>
+              <a>
+                <img
+                  className="h-10"
+                  src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
+                  alt="Company name"
+                />
+              </a>
+            </Link>
+
             <p className="text-gray-500 text-base">
-              Making the world a better place through constructing elegant
-              hierarchies.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              mollis risus diam, id fermentum ante mattis a.
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-400 hover:text-gray-500">
+                  className="text-gray-400 hover:text-blue-500">
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
                 </a>
@@ -129,7 +130,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900">
+                        className="text-base text-gray-500 hover:text-blue-500">
                         {item.name}
                       </a>
                     </li>
@@ -145,7 +146,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900">
+                        className="text-base text-gray-500 hover:text-blue-500">
                         {item.name}
                       </a>
                     </li>
@@ -163,7 +164,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900">
+                        className="text-base text-gray-500 hover:text-blue-500">
                         {item.name}
                       </a>
                     </li>
@@ -172,18 +173,44 @@ export default function Footer() {
               </div>
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                  Contact
+                  Contact Us
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
-                  {navigation.contact.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
+                  <li>
+                    <dl className="text-base text-gray-500">
+                      <div>
+                        <dt className="sr-only">Postal address</dt>
+                        <dd>
+                          <p className="">742 Evergreen Terrace</p>
+                          <p className="">Springfield, OR 12345</p>
+                        </dd>
+                      </div>
+                      <div className="mt-6">
+                        <dt className="sr-only">Phone number</dt>
+                        <dd className="flex">
+                          {/* <PhoneIcon
+                            className="flex-shrink-0 h-5 w-5 text-gray-400 hover:text-blue-500"
+                            aria-hidden="true"
+                          /> */}
+                          <span className="ml-1 text-sm">
+                            +1 (555) 123-4567
+                          </span>
+                        </dd>
+                      </div>
+                      <div className="mt-3">
+                        <dt className="sr-only">Email</dt>
+                        <dd className="flex">
+                          {/* <MailIcon
+                            className="flex-shrink-0 h-5 w-5 text-gray-400 hover:text-blue-500"
+                            aria-hidden="true"
+                          /> */}
+                          <span className="ml-1 text-base">
+                            support@example.com
+                          </span>
+                        </dd>
+                      </div>
+                    </dl>
+                  </li>
                 </ul>
               </div>
             </div>
