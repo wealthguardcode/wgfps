@@ -5,19 +5,16 @@ import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 import {
-  CalendarIcon,
-  ChartBarIcon,
-  FolderIcon,
-  HomeIcon,
-  InboxIcon,
-  UsersIcon,
+  BriefcaseIcon,
+  GlobeIcon,
+  DocumentIcon,
+  QuestionMarkCircleIcon,
 } from '@heroicons/react/outline'
 
 const navigation = [
-  // { name: 'Home', icon: HomeIcon, current: true, href: '/' },
   {
     name: 'Our Policies',
-    icon: UsersIcon,
+    icon: DocumentIcon,
     current: false,
     children: [
       { name: 'Term Life Insurance', href: '/insurance/term-life-insurance' },
@@ -50,7 +47,7 @@ const navigation = [
   },
   {
     name: 'Learn & Plan',
-    icon: FolderIcon,
+    icon: GlobeIcon,
     current: false,
     children: [
       { name: 'Life Insurance', href: '/life-insurance' },
@@ -64,7 +61,7 @@ const navigation = [
   },
   {
     name: 'Why WIG?',
-    icon: CalendarIcon,
+    icon: BriefcaseIcon,
     current: false,
     children: [
       { name: 'Why WIG?', href: '/why-wig' },
@@ -75,7 +72,7 @@ const navigation = [
   },
   {
     name: 'Help',
-    icon: InboxIcon,
+    icon: QuestionMarkCircleIcon,
     current: false,
     children: [
       { name: 'FAQ', href: '/faq' },
@@ -136,7 +133,6 @@ export default function Header() {
                   </Link>
                 </div>
                 <div className="hidden md:ml-6 md:flex md:space-x-8">
-                  {/* Current: "border-blue-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <HeaderNav />
                 </div>
               </div>
@@ -146,10 +142,6 @@ export default function Header() {
                     <button
                       type="button"
                       className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded text-white bg-blue-600 shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                      {/* <PlusSmIcon
-                      className="-ml-1 mr-2 h-5 w-5"
-                      aria-hidden="true"
-                    /> */}
                       <span>Check my price</span>
                     </button>
                   </Link>
@@ -161,13 +153,6 @@ export default function Header() {
           <Disclosure.Panel className="md:hidden absolute w-3/4 z-10">
             <div className="pt-0 pb-3 space-y-1 ">
               <div className="flex flex-col flex-grow border-r border-gray-200 pt-2 pb-4 bg-white overflow-y-auto ">
-                {/* <div className="flex items-center flex-shrink-0 px-4">
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-blue-600-mark-gray-800-text.svg"
-                    alt="Workflow"
-                  />
-                </div> */}
                 <div className="mt-5 flex-grow flex flex-col">
                   <nav
                     className="flex-1 px-2 space-y-1 bg-white"
