@@ -5,19 +5,19 @@ const navigation = {
   resources: [
     { name: 'All Policies', href: '/insurance/policies' },
     { name: 'Coverage Estimate', href: '/estimate' },
-    { name: 'How It Works', href: '/how-it-works' },
-    { name: 'Choosing a Policy', href: '/choosing-policy' },
+    { name: 'How It Works', href: '#' },
+    { name: 'Choosing a Policy', href: '#' },
   ],
   company: [
-    { name: 'Why WIG?', href: 'why-wig' },
+    { name: 'Why WIG?', href: '#' },
     { name: 'About Us', href: '/about-us' },
-    { name: 'Our History', href: '/our-history' },
+    { name: 'Our History', href: '#' },
     { name: 'FAQ', href: '/faq' },
   ],
   legal: [
     { name: 'Contact', href: '/contact-us' },
-    { name: 'Privacy', href: '/privacy' },
-    { name: 'Terms', href: '/terms' },
+    { name: 'Privacy', href: '#' },
+    { name: 'Terms', href: '#' },
   ],
   social: [
     {

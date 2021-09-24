@@ -50,10 +50,10 @@ const navigation = [
     icon: GlobeIcon,
     current: false,
     children: [
-      { name: 'Life Insurance', href: '/life-insurance' },
+      { name: 'Life Insurance', href: '#' },
       { name: 'What is Life Insurance?', href: '#' },
-      { name: 'How Does Life Insurance Work?', href: '/how-it-works' },
-      { name: 'Choosing a Life Insurance Policy', href: '/choosing-policy' },
+      { name: 'How Does Life Insurance Work?', href: '#' },
+      { name: 'Choosing a Life Insurance Policy', href: '#' },
       { name: 'Which Type of Life Insurance Policy Do I Need?', href: '#' },
       { name: 'What to Expect When You Apply for Life Insurance', href: '#' },
       { name: 'Life Insurance Medical Exam', href: '#' },
@@ -64,10 +64,10 @@ const navigation = [
     icon: BriefcaseIcon,
     current: false,
     children: [
-      { name: 'Why WIG?', href: '/why-wig' },
+      { name: 'Why WIG?', href: '#' },
       { name: 'About Us', href: '/about-us' },
       { name: 'Customer Reviews', href: '#' },
-      { name: 'Our History', href: '/our-history' },
+      { name: 'Our History', href: '#' },
     ],
   },
   {
