@@ -95,10 +95,15 @@ export default function Footer() {
           <div className="space-y-8 xl:col-span-1">
             <Link href="/" passHref>
               <a>
-                <img
+                {/* <img
                   className="h-10"
                   src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
                   alt="Company name"
+                /> */}
+                <img
+                  className="h-12"
+                  src="/images/wig-logo-nobg.svg"
+                  alt="WealthGuard Logo"
                 />
               </a>
             </Link>
@@ -171,7 +176,7 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-12 md:mt-0">
+              <div className="mt-20 md:mt-0">
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                   Contact Us
                 </h3>
@@ -218,7 +223,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 border-t border-gray-200 pt-8">
           <p className="text-base text-gray-400 xl:text-center">
-            &copy; 2021 WIG - All rights reserved.
+            &copy; 2021 WealthGuard Insurance Group - All rights reserved.
           </p>
         </div>
       </div>

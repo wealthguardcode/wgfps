@@ -53,10 +53,10 @@ const navigation = [
     icon: FolderIcon,
     current: false,
     children: [
-      { name: 'Life Insurance', href: '#' },
+      { name: 'Life Insurance', href: '/life-insurance' },
       { name: 'What is Life Insurance?', href: '#' },
       { name: 'How Does Life Insurance Work?', href: '/how-it-works' },
-      { name: 'Choosing a Life Insurance Policy', href: '#' },
+      { name: 'Choosing a Life Insurance Policy', href: '/choosing-policy' },
       { name: 'Which Type of Life Insurance Policy Do I Need?', href: '#' },
       { name: 'What to Expect When You Apply for Life Insurance', href: '#' },
       { name: 'Life Insurance Medical Exam', href: '#' },
@@ -67,10 +67,10 @@ const navigation = [
     icon: CalendarIcon,
     current: false,
     children: [
-      { name: 'Why WIG?', href: '#' },
+      { name: 'Why WIG?', href: '/why-wig' },
       { name: 'About Us', href: '/about-us' },
       { name: 'Customer Reviews', href: '#' },
-      { name: 'Our History', href: '#' },
+      { name: 'Our History', href: '/our-history' },
     ],
   },
   {
@@ -112,15 +112,25 @@ export default function Header() {
                 <div className="flex-shrink-0 flex items-center">
                   <Link href="/">
                     <a>
-                      <img
+                      {/* <img
                         className="block lg:hidden h-8 w-auto"
                         src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
                         alt="Workflow"
-                      />
+                      /> */}
                       <img
+                        className="block lg:hidden h-12 w-auto"
+                        src="/images/wig-logo-nobg.svg"
+                        alt="WealthGuard Logo"
+                      />
+                      {/* <img
                         className="hidden lg:block h-8 w-auto"
                         src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
                         alt="Workflow"
+                      /> */}
+                      <img
+                        className="hidden lg:block h-12 w-auto"
+                        src="/images/wig-logo-nobg.svg"
+                        alt="WealthGuard Logo"
                       />
                     </a>
                   </Link>

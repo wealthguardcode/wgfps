@@ -39,7 +39,7 @@ const policies = [
 const learn = [
   {
     name: 'Life Insurance',
-    href: '#',
+    href: '/life-insurance',
   },
   {
     name: 'What is Life Insurance?',
@@ -51,7 +51,7 @@ const learn = [
   },
   {
     name: 'Choosing a Life Insurance Policy',
-    href: '#',
+    href: '/choosing-policy',
   },
   {
     name: 'Which Type of Life Insurance Policy Do I Need?',
@@ -69,7 +69,7 @@ const learn = [
 const whyWig = [
   {
     name: 'Why WIG?',
-    href: '#',
+    href: '/why-wig',
   },
   {
     name: 'About Us',
@@ -81,7 +81,7 @@ const whyWig = [
   },
   {
     name: 'Our History',
-    href: '#',
+    href: '/our-history',
   },
 ]
 const help = [
