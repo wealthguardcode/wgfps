@@ -149,7 +149,10 @@ export default function ADPage() {
                   <p>Medicare Advantage plans</p>
                   <p>
                     See the Medicare Advantage plans page{' '}
-                    <a href="/medicare/advantage">here</a>
+                    <Link href="/medicare/advantage">
+                      {' '}
+                      <a>here</a>
+                    </Link>
                     here.
                   </p>
                   {/* <ol role="list">
