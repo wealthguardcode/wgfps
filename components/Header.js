@@ -135,7 +135,7 @@ export default function Header() {
                     <button
                       type="button"
                       className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded text-white bg-blue-600 shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                      <span>Check my price</span>
+                      <span>Quote Term Life Now</span>
                     </button>
                   </Link>
                 </div>

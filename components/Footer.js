@@ -173,20 +173,31 @@ export default function Footer() {
                       <div>
                         <dt className="sr-only">Postal address</dt>
                         <dd>
-                          <p className="">742 Evergreen Terrace</p>
-                          <p className="">Springfield, OR 12345</p>
+                          <p className="">7205 Ste-A, FM 1488 Rd</p>
+                          <p className="">Magnolia, TX 77354</p>
                         </dd>
                       </div>
                       <div className="mt-6">
                         <dt className="sr-only">Phone number</dt>
                         <dd className="flex">
-                          {/* <PhoneIcon
-                            className="flex-shrink-0 h-5 w-5 text-gray-400 hover:text-blue-500"
-                            aria-hidden="true"
-                          /> */}
-                          <span className="ml-1 text-sm">
-                            +1 (555) 123-4567
-                          </span>
+                          <a
+                            href="tel:832-930-3827"
+                            target="_blank"
+                            rel="noreferrer">
+                            <span className="ml-1 text-sm">
+                              832-930-3827 office
+                            </span>
+                          </a>
+                        </dd>
+                        <dd className="flex">
+                          <a
+                            href="tel:832-326-7278"
+                            target="_blank"
+                            rel="noreferrer">
+                            <span className="ml-1 text-sm">
+                              832-326-7278 <strong>direct</strong>
+                            </span>
+                          </a>
                         </dd>
                       </div>
                       <div className="mt-3">
@@ -197,7 +208,12 @@ export default function Footer() {
                             aria-hidden="true"
                           /> */}
                           <span className="ml-1 text-base">
-                            support@example.com
+                            <a
+                              href="mailto:michael@wealthguardig.com"
+                              target="_blank"
+                              rel="noreferrer">
+                              michael@wealthguardig.com
+                            </a>
                           </span>
                         </dd>
                       </div>

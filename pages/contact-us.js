@@ -1,5 +1,38 @@
 import Layout from '../components/Layout'
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
+import emailjs from 'emailjs-com'
+
+function fun() {
+  document.getElementById('from_name').value = ''
+  document.getElementById('user_email').value = ''
+  document.getElementById('user_phone').value = ''
+  document.getElementById('message').value = ''
+}
+
+function sendEmail(e) {
+  e.preventDefault()
+  if (e.target.user_email.value === '' || e.target.from_name.value === '') {
+    return alert('Form cannot be empty!')
+  } else {
+    emailjs
+      .sendForm(
+        'service_74a7ngi',
+        'template_rbn9l2k',
+        e.target,
+        'user_1ODnWoNdXKoQipSD1qXJf'
+      )
+      .then(
+        (result) => {
+          alert('Message sent!')
+          console.log(result.text)
+        },
+        (error) => {
+          alert(error.text)
+        }
+      )
+    fun()
+  }
+}
 
 export default function ContactUsPage() {
   return (
@@ -46,20 +79,29 @@ export default function ContactUsPage() {
                 <div>
                   <dt className="sr-only">Postal address</dt>
                   <dd>
-                    <p>742 Evergreen Terrace</p>
-                    <p>Springfield, OR 12345</p>
+                    <p>7205 Ste-A, FM 1488 Rd</p>
+                    <p>Magnolia, TX 77354</p>
                   </dd>
                 </div>
                 <div className="mt-6">
                   <dt className="sr-only">Phone number</dt>
-                  <dd className="flex">
-                    <PhoneIcon
-                      className="flex-shrink-0 h-6 w-6 text-gray-400"
-                      aria-hidden="true"
-                    />
-                    <span className="ml-3">+1 (555) 123-4567</span>
-                  </dd>
                 </div>
+                <dd className="flex">
+                  <PhoneIcon
+                    className="flex-shrink-0 h-6 w-6 text-gray-400"
+                    aria-hidden="true"
+                  />
+                  <span className="ml-3">832-930-3827 office</span>
+                </dd>
+                <dd className="flex">
+                  <PhoneIcon
+                    className="flex-shrink-0 h-6 w-6 text-gray-400"
+                    aria-hidden="true"
+                  />
+                  <span className="ml-3">
+                    832-326-7278 <strong>direct</strong>
+                  </span>
+                </dd>
                 <div className="mt-3">
                   <dt className="sr-only">Email</dt>
                   <dd className="flex">
@@ -67,7 +109,14 @@ export default function ContactUsPage() {
                       className="flex-shrink-0 h-6 w-6 text-gray-400"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">support@example.com</span>
+                    <span className="ml-3">
+                      <a
+                        href="mailto:michael@wealthguardig.com"
+                        target="_blank"
+                        rel="noreferrer">
+                        michael@wealthguardig.com
+                      </a>
+                    </span>
                   </dd>
                 </div>
               </dl>
@@ -83,17 +132,18 @@ export default function ContactUsPage() {
           <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
             <div className="max-w-lg mx-auto lg:max-w-none">
               <form
-                action="#"
+                id="template_rbn9l2k"
                 method="POST"
-                className="grid grid-cols-1 gap-y-6">
+                className="grid grid-cols-1 gap-y-6"
+                onSubmit={sendEmail}>
                 <div>
                   <label htmlFor="full-name" className="sr-only">
                     Full name
                   </label>
                   <input
                     type="text"
-                    name="full-name"
-                    id="full-name"
+                    id="from_name"
+                    name="from_name"
                     autoComplete="name"
                     className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                     placeholder="Full name"
@@ -104,8 +154,8 @@ export default function ContactUsPage() {
                     Email
                   </label>
                   <input
-                    id="email"
-                    name="email"
+                    id="user_email"
+                    name="user_email"
                     type="email"
                     autoComplete="email"
                     className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
@@ -118,8 +168,8 @@ export default function ContactUsPage() {
                   </label>
                   <input
                     type="text"
-                    name="phone"
-                    id="phone"
+                    id="user_phone"
+                    name="user_phone"
                     autoComplete="tel"
                     className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                     placeholder="Phone"
