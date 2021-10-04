@@ -1,6 +1,7 @@
 import { getPoliciesSlugs, getPolicy } from '../../lib/data'
 import Layout from '../../components/Layout'
 import Link from 'next/link'
+import { PhoneIcon } from '@heroicons/react/solid'
 
 export const getStaticPaths = async () => {
   const slugRes = await getPoliciesSlugs()
@@ -32,11 +33,23 @@ export default function PolicyPage({ policy }) {
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span className="block xl:inline">{policy.title}</span>
             </h1>
-            <p className="mt-3 max-w-md mx-auto text-lg text-gray-700 sm:text-xl md:mt-5 md:max-w-3xl">
+            <p className="my-3 max-w-md mx-auto text-lg text-gray-700 sm:text-xl md:mt-5 md:max-w-3xl">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
               fugiat aliqua.
             </p>
+
+            <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
+              <div className="rounded-md shadow">
+                {policy.link && (
+                  <Link href="/estimate" passHref>
+                    <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
+                      No Health Questions. Apply now.
+                    </a>
+                  </Link>
+                )}
+              </div>
+            </div>
           </div>
         </div>
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
