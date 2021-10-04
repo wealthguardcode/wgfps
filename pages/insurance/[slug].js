@@ -1,7 +1,6 @@
 import { getPoliciesSlugs, getPolicy } from '../../lib/data'
 import Layout from '../../components/Layout'
 import Link from 'next/link'
-import { PhoneIcon } from '@heroicons/react/solid'
 
 export const getStaticPaths = async () => {
   const slugRes = await getPoliciesSlugs()
@@ -34,9 +33,7 @@ export default function PolicyPage({ policy }) {
               <span className="block xl:inline">{policy.title}</span>
             </h1>
             <p className="my-3 max-w-md mx-auto text-lg text-gray-700 sm:text-xl md:mt-5 md:max-w-3xl">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              {policy.subheading}
             </p>
 
             <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
@@ -56,7 +53,7 @@ export default function PolicyPage({ policy }) {
           <img
             className="absolute inset-0 w-full h-full object-cover"
             src={policy.image.url}
-            alt=""
+            alt={policy.title}
           />
         </div>
       </div>
@@ -137,60 +134,22 @@ export default function PolicyPage({ policy }) {
               />
             </svg>
             <div className="relative md:bg-white md:p-6">
-              <div className="lg:grid lg:grid-cols-2 lg:gap-6">
+              <div className="lg:grid lg:grid-cols-1 lg:gap-6">
                 <div className="prose prose-blue prose-lg text-gray-500 lg:max-w-none">
-                  <p>
-                    Ultrices ultricies a in odio consequat egestas rutrum. Ut
-                    vitae aliquam in ipsum. Duis nullam placerat cursus risus
-                    ultrices nisi, vitae tellus in. Qui non fugiat aut minus aut
-                    rerum. Perspiciatis iusto mollitia iste minima soluta id.
-                  </p>
-                  <p>
-                    Erat pellentesque dictumst ligula porttitor risus eget et
-                    eget. Ultricies tellus felis id dignissim eget. Est augue{' '}
-                    <a href="#">maecenas</a> risus nulla ultrices congue nunc
-                    tortor. Eu leo risus porta integer suspendisse sed sit
-                    ligula elit.
-                  </p>
-                  <ol role="list">
-                    <li>
-                      Integer varius imperdiet sed interdum felis cras in nec
-                      nunc.
-                    </li>
-                    <li>
-                      Quam malesuada odio ut sit egestas. Elementum at porta
-                      vitae.
-                    </li>
-                  </ol>
-                  <p>
-                    Amet, eu nulla id molestie quis tortor. Auctor erat justo,
-                    sed pellentesque scelerisque interdum blandit lectus. Nec
-                    viverra amet ac facilisis vestibulum. Vestibulum purus nibh
-                    ac ultricies congue.
-                  </p>
-                </div>
-                <div className="mt-6 prose prose-indigo prose-lg text-gray-500 lg:mt-0">
-                  <p>
-                    Erat pellentesque dictumst ligula porttitor risus eget et
-                    eget. Ultricies tellus felis id dignissim eget. Est augue
-                    maecenas risus nulla ultrices congue nunc tortor.
-                  </p>
-                  <p>
-                    Eu leo risus porta integer suspendisse sed sit ligula elit.
-                    Elit egestas lacinia sagittis pellentesque neque dignissim
-                    vulputate sodales. Diam sed mauris felis risus, ultricies
-                    mauris netus tincidunt. Mauris sit eu ac tellus nibh non
-                    eget sed accumsan. Viverra ac sed venenatis pulvinar elit.
-                    Cras diam quis tincidunt lectus. Non mi vitae, scelerisque
-                    felis nisi, netus amet nisl.
-                  </p>
-                  <p>
-                    Eu eu mauris bibendum scelerisque adipiscing et. Justo,
-                    elementum consectetur morbi eros, posuere ipsum tortor. Eget
-                    cursus massa sed velit feugiat sed ut. Faucibus eros mauris
-                    morbi aliquam nullam. Scelerisque elementum sit magna
-                    ullamcorper dignissim pretium.
-                  </p>
+                  <div className="text-base max-w-prose lg:max-w-none">
+                    <h2 className="leading-6 text-blue-600 font-semibold tracking-wide uppercase"></h2>
+                    <p className="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-900">
+                      What is {policy.title}?
+                    </p>
+                  </div>
+                  <p>{policy.whatIsIt}</p>
+                  <div className="text-base max-w-prose lg:max-w-none">
+                    <h2 className="leading-6 text-blue-600 font-semibold tracking-wide uppercase"></h2>
+                    <p className="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-900">
+                      How does {policy.title} work?
+                    </p>
+                  </div>
+                  <p>{policy.howItWorks}</p>
                 </div>
               </div>
               <div className="mt-8 inline-flex rounded-md shadow">
