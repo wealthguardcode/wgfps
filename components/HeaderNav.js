@@ -29,7 +29,7 @@ const policies = [
 const medicare = [
   {
     name: 'Medicare Parts A-D',
-    href: '/medicare/a-d',
+    href: '/medicare/ad',
   },
   {
     name: 'Medicare Advantage',
