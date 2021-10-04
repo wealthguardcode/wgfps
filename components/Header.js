@@ -47,57 +47,34 @@ const navigation = [
     children: [
       {
         name: 'Medicare Parts A-D',
-        href: '#',
+        href: '/medicare/a-d',
       },
       {
         name: 'Medicare Advantage',
-        href: '/about-us',
+        href: '/medicare/advantage',
       },
       {
         name: 'Medicare Supplement',
-        href: '#',
+        href: '/medicare/supplement',
       },
     ],
   },
-  {
-    name: 'Annuities',
-    icon: BriefcaseIcon,
-    current: false,
-    children: [
-      {
-        name: 'Link 1',
-        href: '#',
-      },
-      {
-        name: 'Link 2',
-        href: '#',
-      },
-      {
-        name: 'Link 3',
-        href: '#',
-      },
-    ],
-  },
-  {
-    name: 'Employee Benefits',
-    icon: QuestionMarkCircleIcon,
-    current: false,
-    children: [
-      {
-        name: 'Link 1',
-        href: '#',
-      },
-      {
-        name: 'Link 2',
-        href: '#',
-      },
-      {
-        name: 'Link 3',
-        href: '#',
-      },
-    ],
-  },
+  // {
+  //   name: 'Annuities',
+  //   icon: BriefcaseIcon,
+  //   current: false,
+  //   children: [{ href: '#' }],
+  // },
+  // {
+  //   name: 'Employee Benefits',
+  //   icon: QuestionMarkCircleIcon,
+  //   current: false,
+  //   children: [{ href: '#' }],
+  // },
 ]
+
+const annuities = []
+const employee = []
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -245,6 +222,25 @@ export default function Header() {
                         </Disclosure>
                       )
                     )}
+                  </nav>
+
+                  <nav
+                    className="flex-1 px-2 space-y-1 bg-white"
+                    aria-label="Sidebar">
+                    <div>
+                      <Link href="/annuities">
+                        <a>
+                          <span>Annuities</span>
+                        </a>
+                      </Link>
+                    </div>
+                    <div>
+                      <Link href="/employee">
+                        <a>
+                          <span>Employee Benefits</span>
+                        </a>
+                      </Link>
+                    </div>
                   </nav>
                 </div>
               </div>

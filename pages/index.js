@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ExternalLinkIcon } from '@heroicons/react/solid'
+import { ExternalLinkIcon, PhoneIcon } from '@heroicons/react/solid'
 import Layout from '../components/Layout'
 import Link from 'next/link'
 
@@ -102,9 +102,13 @@ export default function HomePage() {
                 </Link>
               </div>
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-                <Link href="/about-us">
+                <Link href="#">
                   <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
-                    About Us
+                    <PhoneIcon
+                      className="-ml-0.5 mr-2 h-6 w-6"
+                      aria-hidden="true"
+                    />
+                    Call Now
                   </a>
                 </Link>
               </div>
