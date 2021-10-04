@@ -87,20 +87,26 @@ export default function ContactUsPage() {
                   <dt className="sr-only">Phone number</dt>
                 </div>
                 <dd className="flex">
-                  <PhoneIcon
-                    className="flex-shrink-0 h-6 w-6 text-gray-400"
-                    aria-hidden="true"
-                  />
-                  <span className="ml-3">832-930-3827 office</span>
+                  <a href="tel:832-930-3827" target="_blank" rel="noreferrer">
+                    {' '}
+                    <PhoneIcon
+                      className="flex-shrink-0 h-6 w-6 text-gray-400"
+                      aria-hidden="true"
+                    />
+                    <span className="ml-3">832-930-3827 office</span>
+                  </a>
                 </dd>
                 <dd className="flex">
-                  <PhoneIcon
-                    className="flex-shrink-0 h-6 w-6 text-gray-400"
-                    aria-hidden="true"
-                  />
-                  <span className="ml-3">
-                    832-326-7278 <strong>direct</strong>
-                  </span>
+                  <a href="tel:832-326-7278" target="_blank" rel="noreferrer">
+                    {' '}
+                    <PhoneIcon
+                      className="flex-shrink-0 h-6 w-6 text-gray-400"
+                      aria-hidden="true"
+                    />
+                    <span className="ml-3">
+                      832-326-7278 <strong>direct</strong>
+                    </span>
+                  </a>
                 </dd>
                 <div className="mt-3">
                   <dt className="sr-only">Email</dt>
