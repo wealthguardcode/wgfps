@@ -13,16 +13,19 @@ import {
 
 const navigation = [
   {
-    name: 'Our Policies',
+    name: 'Life Insurance',
     icon: DocumentIcon,
     current: false,
     children: [
-      { name: 'Term Life Insurance', href: '/insurance/term-life-insurance' },
+      {
+        name: 'Term Life Insurance',
+        href: '/insurance/term-life-insurance',
+      },
       {
         name: 'Universal Life Insurance',
         href: '/insurance/universal-life-insurance',
       },
-      { name: 'Whole Life Insurance', href: '/insurance/whole-life-insurance' },
+
       {
         name: 'Guaranteed Issue Whole Life Insurance',
         href: '/insurance/guaranteed-issue-whole-life-insurance',
@@ -38,39 +41,60 @@ const navigation = [
     ],
   },
   {
-    name: 'Learn & Plan',
+    name: 'Medicare',
     icon: GlobeIcon,
     current: false,
     children: [
-      { name: 'Life Insurance', href: '#' },
-      { name: 'What is Life Insurance?', href: '#' },
-      { name: 'How Does Life Insurance Work?', href: '#' },
-      { name: 'Choosing a Life Insurance Policy', href: '#' },
-      { name: 'Which Type of Life Insurance Policy Do I Need?', href: '#' },
-      { name: 'What to Expect When You Apply for Life Insurance', href: '#' },
-      { name: 'Life Insurance Medical Exam', href: '#' },
+      {
+        name: 'Medicare Parts A-D',
+        href: '#',
+      },
+      {
+        name: 'Medicare Advantage',
+        href: '/about-us',
+      },
+      {
+        name: 'Medicare Supplement',
+        href: '#',
+      },
     ],
   },
   {
-    name: 'Why WIG?',
+    name: 'Annuities',
     icon: BriefcaseIcon,
     current: false,
     children: [
-      { name: 'Why WIG?', href: '#' },
-      { name: 'About Us', href: '/about-us' },
-      { name: 'Customer Reviews', href: '#' },
-      { name: 'Our History', href: '#' },
+      {
+        name: 'Link 1',
+        href: '#',
+      },
+      {
+        name: 'Link 2',
+        href: '#',
+      },
+      {
+        name: 'Link 3',
+        href: '#',
+      },
     ],
   },
   {
-    name: 'Help',
+    name: 'Employee Benefits',
     icon: QuestionMarkCircleIcon,
     current: false,
     children: [
-      { name: 'FAQ', href: '/faq' },
-      { name: 'Coverage Estimate', href: '/estimate' },
-      { name: 'COVID-19 update', href: '#' },
-      { name: 'Contact Us', href: '/contact-us' },
+      {
+        name: 'Link 1',
+        href: '#',
+      },
+      {
+        name: 'Link 2',
+        href: '#',
+      },
+      {
+        name: 'Link 3',
+        href: '#',
+      },
     ],
   },
 ]
