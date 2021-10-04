@@ -8,28 +8,17 @@ const policies = [
     href: '/insurance/term-life-insurance',
   },
   {
-    name: 'Quality of Life Insurance',
-    href: '/insurance/quality-of-life-insurance',
-  },
-  {
-    name: 'Permanent Life Insurance',
-    href: '/insurance/permanent-life-insurance',
-  },
-  {
     name: 'Universal Life Insurance',
     href: '/insurance/universal-life-insurance',
   },
-  {
-    name: 'Whole Life Insurance',
-    href: '/insurance/whole-life-insurance',
-  },
+
   {
     name: 'Guaranteed Issue Whole Life Insurance',
     href: '/insurance/guaranteed-issue-whole-life-insurance',
   },
   {
-    name: 'Accidental Death Insurance',
-    href: '/insurance/accidental-death-insurance',
+    name: 'Mortgage Protection',
+    href: '/insurance/mortgage-protection',
   },
   {
     name: 'All Policies',
@@ -118,7 +107,7 @@ export default function Example() {
                 open ? 'text-gray-900' : 'text-gray-500',
                 'group bg-white rounded-md inline-flex items-center mt-5 text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
               )}>
-              <span>Our Policies</span>
+              <span>Life Insurance</span>
               <ChevronDownIcon
                 className={classNames(
                   open ? 'text-gray-600' : 'text-gray-400',

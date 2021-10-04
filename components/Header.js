@@ -19,14 +19,6 @@ const navigation = [
     children: [
       { name: 'Term Life Insurance', href: '/insurance/term-life-insurance' },
       {
-        name: 'Quality of Life Insurance',
-        href: '/insurance/quality-of-life-insurance',
-      },
-      {
-        name: 'Permanent Life Insurance',
-        href: '/insurance/permanent-life-insurance',
-      },
-      {
         name: 'Universal Life Insurance',
         href: '/insurance/universal-life-insurance',
       },
@@ -36,8 +28,8 @@ const navigation = [
         href: '/insurance/guaranteed-issue-whole-life-insurance',
       },
       {
-        name: 'Accidental Death Insurance',
-        href: '/insurance/accidental-death-insurance',
+        name: 'Mortgage Protection',
+        href: '/insurance/mortgage-protection',
       },
       {
         name: 'All Policies',
