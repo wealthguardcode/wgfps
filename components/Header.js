@@ -8,7 +8,7 @@ import {
   BriefcaseIcon,
   GlobeIcon,
   DocumentIcon,
-  QuestionMarkCircleIcon,
+  UserIcon,
 } from '@heroicons/react/outline'
 
 const navigation = [
@@ -59,22 +59,24 @@ const navigation = [
       },
     ],
   },
-  // {
-  //   name: 'Annuities',
-  //   icon: BriefcaseIcon,
-  //   current: false,
-  //   children: [{ href: '#' }],
-  // },
-  // {
-  //   name: 'Employee Benefits',
-  //   icon: QuestionMarkCircleIcon,
-  //   current: false,
-  //   children: [{ href: '#' }],
-  // },
 ]
 
-const annuities = []
-const employee = []
+const nav2 = [
+  {
+    name: 'Annuities',
+    icon: BriefcaseIcon,
+    href: '/annuities',
+    current: false,
+    children: [{ href: '#' }],
+  },
+  {
+    name: 'Employee Benefits',
+    icon: UserIcon,
+    href: '/employee',
+    current: false,
+    children: [{ href: '/employee' }],
+  },
+]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -102,21 +104,12 @@ export default function Header() {
                 <div className="flex-shrink-0 flex items-center">
                   <Link href="/">
                     <a>
-                      {/* <img
-                        className="block lg:hidden h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
-                        alt="Workflow"
-                      /> */}
                       <img
                         className="block lg:hidden h-12 w-auto"
                         src="/images/wig-logo-nobg.svg"
                         alt="WealthGuard Logo"
                       />
-                      {/* <img
-                        className="hidden lg:block h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
-                        alt="Workflow"
-                      /> */}
+
                       <img
                         className="hidden lg:block h-12 w-auto"
                         src="/images/wig-logo-nobg.svg"
@@ -223,24 +216,32 @@ export default function Header() {
                       )
                     )}
                   </nav>
-
                   <nav
                     className="flex-1 px-2 space-y-1 bg-white"
                     aria-label="Sidebar">
-                    <div>
-                      <Link href="/annuities">
-                        <a>
-                          <span>Annuities</span>
+                    {nav2.map((item) => (
+                      <div key={item.name}>
+                        <a
+                          href={item.href}
+                          className={classNames(
+                            item.current
+                              ? 'bg-gray-100 text-gray-900'
+                              : 'bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900',
+                            'group w-full flex items-center pl-2 py-2 text-sm font-medium rounded-md'
+                          )}>
+                          <item.icon
+                            className={classNames(
+                              item.current
+                                ? 'text-gray-500'
+                                : 'text-gray-400 group-hover:text-gray-500',
+                              'mr-3 flex-shrink-0 h-6 w-6'
+                            )}
+                            aria-hidden="true"
+                          />
+                          {item.name}
                         </a>
-                      </Link>
-                    </div>
-                    <div>
-                      <Link href="/employee">
-                        <a>
-                          <span>Employee Benefits</span>
-                        </a>
-                      </Link>
-                    </div>
+                      </div>
+                    ))}
                   </nav>
                 </div>
               </div>
