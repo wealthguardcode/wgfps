@@ -173,8 +173,8 @@ export default function Footer() {
                       <div>
                         <dt className="sr-only">Postal address</dt>
                         <dd>
-                          <p className="">7205 FM 1488 Rd, Ste-A</p>
-                          <p className="">Magnolia, TX 77354</p>
+                          <p className="text-sm">7205 FM 1488 Rd, Ste-A</p>
+                          <p className="text-sm">Magnolia, TX 77354</p>
                         </dd>
                       </div>
                       <div className="mt-6">
