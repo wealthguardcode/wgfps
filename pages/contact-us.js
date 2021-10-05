@@ -79,35 +79,29 @@ export default function ContactUsPage() {
                 <div>
                   <dt className="sr-only">Postal address</dt>
                   <dd>
-                    <p>7205 Ste-A, FM 1488 Rd</p>
+                    <p>7205 FM 1488 Rd, Ste-A</p>
                     <p>Magnolia, TX 77354</p>
                   </dd>
                 </div>
-                <div className="mt-6">
-                  <dt className="sr-only">Phone number</dt>
-                </div>
-                <dd className="flex">
-                  <a href="tel:832-930-3827" target="_blank" rel="noreferrer">
-                    {' '}
-                    <PhoneIcon
-                      className="flex-shrink-0 h-6 w-6 text-gray-400"
-                      aria-hidden="true"
-                    />
-                    <span className="ml-3">832-930-3827 office</span>
-                  </a>
-                </dd>
-                <dd className="flex">
-                  <a href="tel:832-326-7278" target="_blank" rel="noreferrer">
-                    {' '}
+
+                <div className="mt-3">
+                  <dt className="sr-only">Phone</dt>
+                  <dd className="flex">
                     <PhoneIcon
                       className="flex-shrink-0 h-6 w-6 text-gray-400"
                       aria-hidden="true"
                     />
                     <span className="ml-3">
-                      832-326-7278 <strong>direct</strong>
+                      <a
+                        href="tel:832-930-3827"
+                        target="_blank"
+                        rel="noreferrer">
+                        832-930-3827
+                      </a>
                     </span>
-                  </a>
-                </dd>
+                  </dd>
+                </div>
+
                 <div className="mt-3">
                   <dt className="sr-only">Email</dt>
                   <dd className="flex">
@@ -117,10 +111,10 @@ export default function ContactUsPage() {
                     />
                     <span className="ml-3">
                       <a
-                        href="mailto:michael@wealthguardig.com"
+                        href="mailto:service@wealthguardig.com"
                         target="_blank"
                         rel="noreferrer">
-                        michael@wealthguardig.com
+                        service@wealthguardig.com
                       </a>
                     </span>
                   </dd>
