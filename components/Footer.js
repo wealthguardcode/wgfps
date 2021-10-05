@@ -205,7 +205,7 @@ export default function Footer() {
                             className="flex-shrink-0 h-5 w-5 text-gray-400 hover:text-blue-500"
                             aria-hidden="true"
                           /> */}
-                          <span className="ml-1 text-base">
+                          <span className="ml-1 text-xs">
                             <a
                               href="mailto:service@wealthguardig.com"
                               target="_blank"
