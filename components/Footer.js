@@ -173,7 +173,7 @@ export default function Footer() {
                       <div>
                         <dt className="sr-only">Postal address</dt>
                         <dd>
-                          <p className="">7205 Ste-A, FM 1488 Rd</p>
+                          <p className="">7205 FM 1488 Rd, Ste-A</p>
                           <p className="">Magnolia, TX 77354</p>
                         </dd>
                       </div>
@@ -184,12 +184,10 @@ export default function Footer() {
                             href="tel:832-930-3827"
                             target="_blank"
                             rel="noreferrer">
-                            <span className="ml-1 text-sm">
-                              832-930-3827 office
-                            </span>
+                            <span className="ml-1 text-sm">832-930-3827</span>
                           </a>
                         </dd>
-                        <dd className="flex">
+                        {/* <dd className="flex">
                           <a
                             href="tel:832-326-7278"
                             target="_blank"
@@ -198,7 +196,7 @@ export default function Footer() {
                               832-326-7278 <strong>direct</strong>
                             </span>
                           </a>
-                        </dd>
+                        </dd> */}
                       </div>
                       <div className="mt-3">
                         <dt className="sr-only">Email</dt>
@@ -209,10 +207,10 @@ export default function Footer() {
                           /> */}
                           <span className="ml-1 text-base">
                             <a
-                              href="mailto:michael@wealthguardig.com"
+                              href="mailto:service@wealthguardig.com"
                               target="_blank"
                               rel="noreferrer">
-                              michael@wealthguardig.com
+                              service@wealthguardig.com
                             </a>
                           </span>
                         </dd>
