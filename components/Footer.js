@@ -5,17 +5,17 @@ const navigation = {
   resources: [
     { name: 'All Policies', href: '/insurance/policies' },
     { name: 'Coverage Estimate', href: '/estimate' },
-    { name: 'How It Works', href: '#' },
-    { name: 'Choosing a Policy', href: '#' },
+    // { name: 'Medicare Parts A-D', href: '/medicare/ad' },
+    // { name: 'Medicare Advantage', href: '/medicare/advantage' },
+    // { name: 'Medicare Supplement', href: '/medicare/supplement' },
   ],
   company: [
-    { name: 'Why WIG?', href: '#' },
-    { name: 'About Us', href: '/about-us' },
-    { name: 'Our History', href: '#' },
-    { name: 'FAQ', href: '/faq' },
+    { name: 'Contact', href: '/contact-us' },
+    // { name: 'About Us', href: '/about-us' },
+    // { name: 'Our History', href: '#' },
+    // { name: 'FAQ', href: '/faq' },
   ],
   legal: [
-    { name: 'Contact', href: '/contact-us' },
     { name: 'Privacy', href: '#' },
     { name: 'Terms', href: '#' },
   ],
@@ -187,24 +187,10 @@ export default function Footer() {
                             <span className=" text-sm">832-930-3827</span>
                           </a>
                         </dd>
-                        {/* <dd className="flex">
-                          <a
-                            href="tel:832-326-7278"
-                            target="_blank"
-                            rel="noreferrer">
-                            <span className="ml-1 text-sm">
-                              832-326-7278 <strong>direct</strong>
-                            </span>
-                          </a>
-                        </dd> */}
                       </div>
                       <div className="mt-3">
                         <dt className="sr-only">Email</dt>
                         <dd className="flex">
-                          {/* <MailIcon
-                            className="flex-shrink-0 h-5 w-5 text-gray-400 hover:text-blue-500"
-                            aria-hidden="true"
-                          /> */}
                           <span className="text-xs md:text-sm">
                             <a
                               href="mailto:service@wealthguardig.com"

@@ -202,7 +202,7 @@ export default function HomePage() {
             </p>
             <div className="mt-8">
               <div className="inline-flex rounded-md shadow">
-                <Link href="/how-it-works">
+                <Link href="#">
                   <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
                     Learn more
                     <ExternalLinkIcon
