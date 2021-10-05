@@ -184,7 +184,7 @@ export default function Footer() {
                             href="tel:832-930-3827"
                             target="_blank"
                             rel="noreferrer">
-                            <span className="ml-1 text-sm">832-930-3827</span>
+                            <span className=" text-sm">832-930-3827</span>
                           </a>
                         </dd>
                         {/* <dd className="flex">
@@ -205,7 +205,7 @@ export default function Footer() {
                             className="flex-shrink-0 h-5 w-5 text-gray-400 hover:text-blue-500"
                             aria-hidden="true"
                           /> */}
-                          <span className="ml-1 text-xs">
+                          <span className="text-xs md:text-sm">
                             <a
                               href="mailto:service@wealthguardig.com"
                               target="_blank"
