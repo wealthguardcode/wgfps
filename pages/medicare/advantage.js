@@ -1,5 +1,6 @@
 import Layout from '../../components/Layout'
 import Link from 'next/link'
+import { PhoneIcon } from '@heroicons/react/solid'
 
 export default function AdvantagePage() {
   return (
@@ -200,11 +201,15 @@ export default function AdvantagePage() {
                 </Link>
               </div>
               <div className="mt-8 inline-flex rounded-md shadow ml-4">
-                <Link href="/estimate">
-                  <a className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50">
-                    Check Price
-                  </a>
-                </Link>
+                <a
+                  href="tel:832-930-3827"
+                  className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50">
+                  <PhoneIcon
+                    className="-ml-0.5 mr-2 h-4 w-4"
+                    aria-hidden="true"
+                  />
+                  Call Now
+                </a>
               </div>
             </div>
           </div>

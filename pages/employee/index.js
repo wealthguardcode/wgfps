@@ -128,7 +128,8 @@ export default function EmployeeBenefitsPage() {
                   <ol role="list">
                     <p>
                       <strong>
-                        Guardify Partners with our Client in Communicating Value
+                        WealthGuard Partners with our Client in Communicating
+                        Value
                       </strong>
                       <br />
                       Our main strategic priorities for employee benefits are:
@@ -152,29 +153,6 @@ export default function EmployeeBenefitsPage() {
                     wellness.
                   </p>
                 </div>
-                {/* <div className="mt-6 prose prose-indigo prose-lg text-gray-500 lg:mt-0">
-                  <p>
-                    Erat pellentesque dictumst ligula porttitor risus eget et
-                    eget. Ultricies tellus felis id dignissim eget. Est augue
-                    maecenas risus nulla ultrices congue nunc tortor.
-                  </p>
-                  <p>
-                    Eu leo risus porta integer suspendisse sed sit ligula elit.
-                    Elit egestas lacinia sagittis pellentesque neque dignissim
-                    vulputate sodales. Diam sed mauris felis risus, ultricies
-                    mauris netus tincidunt. Mauris sit eu ac tellus nibh non
-                    eget sed accumsan. Viverra ac sed venenatis pulvinar elit.
-                    Cras diam quis tincidunt lectus. Non mi vitae, scelerisque
-                    felis nisi, netus amet nisl.
-                  </p>
-                  <p>
-                    Eu eu mauris bibendum scelerisque adipiscing et. Justo,
-                    elementum consectetur morbi eros, posuere ipsum tortor. Eget
-                    cursus massa sed velit feugiat sed ut. Faucibus eros mauris
-                    morbi aliquam nullam. Scelerisque elementum sit magna
-                    ullamcorper dignissim pretium.
-                  </p>
-                </div> */}
               </div>
               <div className="mt-8 inline-flex rounded-md shadow">
                 <Link href="/contact-us">
