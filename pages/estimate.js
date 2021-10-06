@@ -1,5 +1,11 @@
 import Layout from '../components/Layout'
 
+import dynamic from 'next/dynamic'
+
+const EstimateWidget = dynamic(() => import('../components/EstimateWidget'), {
+  fallback: <div>Loading...</div>,
+})
+
 const faqs = [
   {
     id: 1,
@@ -84,14 +90,10 @@ export default function EstimatePage() {
         </div>
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-          <div className="bg-gray-200 py-8 px-4 shadow sm:rounded-lg sm:px-10">
+          <div className="bg-gray-50 py-8 px-4 shadow sm:rounded-lg sm:px-10">
             {/* Ninja Quoter Form */}
             <div className="h-auto w-full mt-8 mb-12 md:mt-5 md:mb-8">
-              <script
-                className="nqwq Ghwi"
-                type="text/javascript"
-                src="//wq.ninjaquoter.com/Ghwisqf9yUYsqKxM7A2dBmYh.js"
-                async></script>
+              <EstimateWidget />
             </div>
 
             <div className="mt-6">
