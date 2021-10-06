@@ -40,11 +40,17 @@ export default function PolicyPage({ policy }) {
             <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
                 {policy.link && (
-                  <Link href="/estimate" passHref>
-                    <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
-                      No Health Questions. Apply now.
-                    </a>
-                  </Link>
+                  <a
+                    href="tel:832-930-3827"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
+                    target="_blank"
+                    rel="noreferrer">
+                    No Health Questions Asked.{' '}
+                    <PhoneIcon
+                      className="ml-1 mr-2 h-6 w-6"
+                      aria-hidden="true"
+                    />
+                  </a>
                 )}
               </div>
             </div>

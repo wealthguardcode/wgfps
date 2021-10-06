@@ -1,5 +1,6 @@
 import Layout from '../../components/Layout'
 import Link from 'next/link'
+import { PhoneIcon } from '@heroicons/react/outline'
 
 export default function AnnuitiesPage() {
   return (
@@ -120,11 +121,7 @@ export default function AnnuitiesPage() {
                     principal protection and guaranteed lifetime income. By
                     blending market upside with downside protection, index
                     annuities can help provide the income you need to stay on
-                    track with your retirement goals. Erat pellentesque dictumst
-                    ligula porttitor risus eget et eget. Ultricies tellus felis
-                    id dignissim eget. Est augue <a href="#">maecenas</a> risus
-                    nulla ultrices congue nunc tortor. Eu leo risus porta
-                    integer suspendisse sed sit ligula elit.
+                    track with your retirement goals.
                   </p>
                   <ol role="list">
                     <li>Help grow your income to the max.</li>
@@ -161,11 +158,15 @@ export default function AnnuitiesPage() {
                 </Link>
               </div>
               <div className="mt-8 inline-flex rounded-md shadow ml-4">
-                <Link href="/estimate">
-                  <a className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50">
-                    Check Price
-                  </a>
-                </Link>
+                <a
+                  href="tel:832-930-3827"
+                  className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50">
+                  <PhoneIcon
+                    className="-ml-0.5 mr-2 h-4 w-4"
+                    aria-hidden="true"
+                  />
+                  Call Now
+                </a>
               </div>
             </div>
           </div>
