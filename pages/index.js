@@ -3,6 +3,12 @@ import { ExternalLinkIcon, PhoneIcon } from '@heroicons/react/solid'
 import Layout from '../components/Layout'
 import Link from 'next/link'
 
+import dynamic from 'next/dynamic'
+
+const EstimateWidget = dynamic(() => import('../components/EstimateWidget'), {
+  fallback: <div>Loading...</div>,
+})
+
 const perks = [
   {
     name: 'Lorem ipsum dolor',
@@ -136,12 +142,7 @@ export default function HomePage() {
           </div>
 
           <div className="h-auto w-full mt-8 mb-12 md:mt-5 md:mb-8">
-            <script
-              className="nqwq Ghwi"
-              type="text/javascript"
-              src="//wq.ninjaquoter.com/Ghwisqf9yUYsqKxM7A2dBmYh.js"
-              async
-            />
+            <EstimateWidget />
           </div>
         </div>
       </div>
