@@ -20,7 +20,7 @@ export default function EmployeeBenefitsPage() {
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           <img
             className="absolute inset-0 w-full h-full object-cover"
-            src="https://img1.wsimg.com/isteam/stock/9725/:/cr=t:0%25,l:16.01%25,w:67.98%25,h:100%25/rs=w:400,cg:true"
+            src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=685&q=80"
             alt="Employee Benefits"
           />
         </div>
