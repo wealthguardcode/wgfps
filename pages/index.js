@@ -140,7 +140,8 @@ export default function HomePage() {
               className="nqwq Ghwi"
               type="text/javascript"
               src="//wq.ninjaquoter.com/Ghwisqf9yUYsqKxM7A2dBmYh.js"
-              async></script>
+              async
+            />
           </div>
         </div>
       </div>
