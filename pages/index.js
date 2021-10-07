@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { ExternalLinkIcon, PhoneIcon } from '@heroicons/react/solid'
+import { UsersIcon } from '@heroicons/react/outline'
 import Layout from '../components/Layout'
 import Link from 'next/link'
 
@@ -11,32 +12,32 @@ const EstimateWidget = dynamic(() => import('../components/EstimateWidget'), {
 
 const perks = [
   {
-    name: 'Lorem ipsum dolor',
+    name: 'Local team members',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce/icons/icon-delivery-light.svg',
+      'https://media.graphcms.com/output=format:png/resize=,height:800,fit:max/aGNe7lOtSnu3jybWyi0W',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis risus diam, id fermentum ante mattis a.',
+      'We may be strong as individuals but together we are invincible. Local and here to help.',
   },
   {
-    name: 'Aliquam mollis risus diam',
+    name: 'Instant quote',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce/icons/icon-warranty-light.svg',
+      'https://media.graphcms.com/output=format:png/resize=,height:800,fit:max/6GDa58lQVuKX1KROF0fA',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis risus diam, id fermentum ante mattis a. ',
+      'Real time quoting data on rates and/or product changes to help you have the latest prices.',
   },
   {
-    name: 'Mauris efficitur ligula',
+    name: 'Worry-free',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce/icons/icon-returns-light.svg',
+      'https://media.graphcms.com/output=format:png/resize=,height:800,fit:max/zFJTjtcITV6ybZ1bAh6d',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis risus diam, id fermentum ante mattis a.',
+      'No worries, we’ve got you covered. Helping you attain your peace of mind.',
   },
   {
-    name: 'Lorem ipsum, lorem anuit',
+    name: 'Expert coverage',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce/icons/icon-delivery-light.svg',
+      'https://media.graphcms.com/output=format:png/resize=,height:800,fit:max/LYN4OxQ7QtShPO4n0PG1',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis risus diam, id fermentum ante mattis a.',
+      'With years of industry experience, providing you with more time and money in your wallet.',
   },
 ]
 
@@ -160,14 +161,14 @@ export default function HomePage() {
               <div key={perk.name} className="sm:flex">
                 <div className="sm:flex-shrink-0">
                   <div className="flow-root">
-                    <img className="w-28 h-24" src={perk.imageSrc} alt="" />
+                    <img className="w-24 h-24" src={perk.imageSrc} alt="" />
                   </div>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <h3 className="text-sm font-medium text-gray-900">
+                  <h3 className="text-base md:text-lg font-medium text-gray-900">
                     {perk.name}
                   </h3>
-                  <p className="mt-2 text-sm text-gray-500">
+                  <p className="mt-2 text-sm md:text-base text-gray-500">
                     {perk.description}
                   </p>
                 </div>
