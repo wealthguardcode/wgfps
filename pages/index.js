@@ -197,10 +197,11 @@ export default function HomePage() {
               How WIG works
             </p>
             <p className="mt-3 text-lg text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
-              egestas tempus tellus etiam sed. Quam a scelerisque amet
-              ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
-              quisque ut interdum tincidunt duis.
+              Here at <strong>WealthGuard Insurance Group</strong>, we take
+              pride in providing a faster, better, and easier life insurance
+              experience for you and your loved ones. Our mission is to protect
+              the next million families and we intend to do just that with an
+              honest and transparent process. Get a better idea of how it works.
             </p>
             <div className="mt-8">
               <div className="inline-flex rounded-md shadow">
@@ -274,17 +275,15 @@ export default function HomePage() {
 
           <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
             {/* Content area */}
-            <div className="pt-12 sm:pt-16 lg:pt-20">
+            <div className="pt-12 sm:pt-16 lg:pt-32">
               <h2 className="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl">
                 Rest easy knowing you&apos;re safe
               </h2>
               <div className="mt-6 text-gray-500 space-y-6">
                 <p className="text-lg">
-                  Sagittis scelerisque nulla cursus in enim consectetur quam.
-                  Dictum urna sed consectetur neque tristique pellentesque.
-                  Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc
-                  nisl netus morbi vel porttitor vitae ut. Amet vitae fames
-                  senectus vitae.
+                  In little to no time, you could qualify for a policy that
+                  could provide assistance for generations and help keep those
+                  you love safe.
                 </p>
               </div>
               <div className="py-8">
