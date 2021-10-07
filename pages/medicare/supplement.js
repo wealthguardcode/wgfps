@@ -11,7 +11,7 @@ export default function SupplementPage() {
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-5xl lg:text-6xl">
               <span className="block xl:inline">Medicare Supplement</span>
             </h1>
-            <h1 className="text-2xl tracking-tight font-extrabold text-gray-900  md:text-3xl lg:text-4xl">
+            <h1 className="mt-3 text-2xl tracking-tight font-extrabold text-gray-900  md:text-3xl lg:text-4xl">
               <span className="block xl:inline">Medigap</span>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-lg text-gray-700 sm:text-xl md:mt-5 md:max-w-3xl">
