@@ -12,9 +12,9 @@ export default function ADPage() {
               <span className="block xl:inline">Medicare A - D</span>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-lg text-gray-700 sm:text-xl md:mt-5 md:max-w-3xl">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              Assistance with the things you cannot always plan on. From
+              inpatient or outpatient hospital stays to medical supplies and
+              perscription drugs.
             </p>
           </div>
         </div>

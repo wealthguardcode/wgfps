@@ -95,10 +95,7 @@ export default function Footer() {
               </a>
             </Link>
 
-            <p className="text-gray-500 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              mollis risus diam, id fermentum ante mattis a.
-            </p>
+            <p className="text-gray-500 text-base">Life is uncertain. People are not. Our life insurance will always be there for you when you need it most.</p>
             <div className="flex space-x-10">
               {navigation.social.map((item) => (
                 <a

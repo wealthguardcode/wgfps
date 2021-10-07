@@ -12,9 +12,10 @@ export default function AnnuitiesPage() {
               <span className="block xl:inline">Annuities</span>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-lg text-gray-700 sm:text-xl md:mt-5 md:max-w-3xl">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              Enjoy the protection of a fixed annuity, the potential for
+              tax-deferred interest earnings based on the performance of a
+              specific index, and the opportunity for guaranteed income for
+              life.
             </p>
           </div>
         </div>

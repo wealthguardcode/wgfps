@@ -16,43 +16,43 @@ const features = [
   {
     name: 'Local team members',
     description:
-      'Tempor tellus in aliquet eu et sit nulla tellus. Suspendisse est, molestie blandit quis ac. Lacus.',
+      'We may be strong as individuals but together we are invincible. Local and here to help.',
   },
   {
     name: 'Instant quote',
     description:
-      'Ornare donec rhoncus vitae nisl velit, neque, mauris dictum duis. Nibh urna non parturient.',
+      'Real time quoting data on rates and/or product changes to help you have the latest prices.',
   },
   {
     name: 'Worry-free',
     description:
-      'Etiam cras augue ornare pretium sit malesuada morbi orci, venenatis. Dictum lacus.',
+      'No worries, we’ve got you covered. Helping you attain your peace of mind.',
   },
   {
     name: 'Expert coverage',
     description:
-      'Interdum quam pulvinar turpis tortor, egestas quis diam amet, natoque. Mauris sagittis.',
+      'With years of industry experience, providing you with more time and money in your wallet.',
   },
-  {
-    name: 'Multiple policies',
-    description:
-      'Ullamcorper in ipsum ac feugiat. Senectus at aliquam vulputate mollis nec. In at risus odio.',
-  },
-  {
-    name: 'Reporting',
-    description:
-      'Magna a vel sagittis aliquam eu amet. Et lorem auctor quam nunc odio. Sed bibendum.',
-  },
-  {
-    name: 'Contact',
-    description:
-      'Sed mi, dapibus turpis orci posuere integer. A porta viverra posuere adipiscing turpis.',
-  },
-  {
-    name: 'Learning',
-    description:
-      'Quisque sapien nunc nisl eros. Facilisis sagittis maecenas id dignissim tristique proin sed.',
-  },
+  // {
+  //   name: 'Multiple policies',
+  //   description:
+  //     'Your life insurance plan should adapt to your life — not the other way around. Find the right plan for you.',
+  // },
+  // {
+  //   name: 'Reporting',
+  //   description:
+  //     'Magna a vel sagittis aliquam eu amet. Et lorem auctor quam nunc odio. Sed bibendum.',
+  // },
+  // {
+  //   name: 'Contact',
+  //   description:
+  //     'Sed mi, dapibus turpis orci posuere integer. A porta viverra posuere adipiscing turpis.',
+  // },
+  // {
+  //   name: 'Learning',
+  //   description:
+  //     'Quisque sapien nunc nisl eros. Facilisis sagittis maecenas id dignissim tristique proin sed.',
+  // },
 ]
 
 export default function Policies({ data }) {
@@ -67,9 +67,11 @@ export default function Policies({ data }) {
               <span className="block xl:inline">Our Policies</span>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-lg text-gray-700 sm:text-xl md:mt-5 md:max-w-3xl">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              As you begin to set up your new household and family, there are
+              many things to consider. Not only will you have to discuss how to
+              handle such things as holidays and household duties, but you will
+              also want to establish a financial plan to reach your long term
+              goals. We&apos;re here to help.
             </p>
           </div>
         </div>
@@ -109,14 +111,14 @@ export default function Policies({ data }) {
       </div>
 
       <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 mb-16">
+        <div className="max-w-7xl mx-auto pt-16 pb-8 px-4 sm:px-6 lg:px-8 mb-16">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-extrabold text-gray-900">
               Life insurance features
             </h2>
             <p className="mt-4 text-lg text-gray-500">
-              Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-              Malesuada adipiscing sagittis vel nulla nec.
+              Life is uncertain. People are not. Here&apos;s some of our
+              features.
             </p>
           </div>
           <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">

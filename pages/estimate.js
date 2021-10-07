@@ -1,5 +1,4 @@
 import Layout from '../components/Layout'
-
 import dynamic from 'next/dynamic'
 
 const EstimateWidget = dynamic(() => import('../components/EstimateWidget'), {
