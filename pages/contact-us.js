@@ -45,9 +45,8 @@ export default function ContactUsPage() {
               <span className="block xl:inline">Contact Us</span>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-lg text-gray-700 sm:text-xl md:mt-5 md:max-w-3xl">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              With years of industry experience, providing you with more time
+              and money in your wallet. We&apos;re here to help.
             </p>
           </div>
         </div>
@@ -72,8 +71,8 @@ export default function ContactUsPage() {
                 Get in touch
               </h2>
               <p className="mt-3 text-lg leading-6 text-gray-500">
-                Nullam risus blandit ac aliquam justo ipsum. Quam mauris
-                volutpat massa dictumst amet. Sapien tortor lacus arcu.
+                Providing insurance solutions with expertise, diversity of
+                products and underwriting integrity!
               </p>
               <dl className="mt-8 text-base text-gray-500">
                 <div>

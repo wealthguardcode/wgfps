@@ -55,9 +55,8 @@ export default function EstimatePage() {
               <span className="block xl:inline">Coverage Estimate</span>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-lg text-gray-700 sm:text-xl md:mt-5 md:max-w-3xl">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              Real time quoting data on rates and/or product changes to help you
+              have the latest prices.
             </p>
           </div>
         </div>
@@ -89,7 +88,7 @@ export default function EstimatePage() {
         </div>
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-          <div className="bg-gray-50 py-8 px-4 shadow sm:rounded-lg sm:px-10">
+          <div className="bg-blue-50 py-8 px-4 shadow sm:rounded-lg sm:px-10">
             {/* Ninja Quoter Form */}
             <div className="h-auto w-full mt-8 mb-12 md:mt-5 md:mb-8">
               <EstimateWidget />
