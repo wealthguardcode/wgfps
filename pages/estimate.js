@@ -107,9 +107,8 @@ export default function EstimatePage() {
               Frequently asked questions
             </h2>
             <p className="mt-4 text-gray-500">
-              Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-              Malesuada adipiscing sagittis vel nulla nec. Urna, sed a lectus
-              elementum blandit et.
+              Here are a few of the most frequently asked questions about life
+              insurance.
             </p>
           </div>
           <div className="mt-20">
