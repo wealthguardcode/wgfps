@@ -33,30 +33,9 @@ const features = [
     description:
       'With years of industry experience, providing you with more time and money in your wallet.',
   },
-  // {
-  //   name: 'Multiple policies',
-  //   description:
-  //     'Your life insurance plan should adapt to your life — not the other way around. Find the right plan for you.',
-  // },
-  // {
-  //   name: 'Reporting',
-  //   description:
-  //     'Magna a vel sagittis aliquam eu amet. Et lorem auctor quam nunc odio. Sed bibendum.',
-  // },
-  // {
-  //   name: 'Contact',
-  //   description:
-  //     'Sed mi, dapibus turpis orci posuere integer. A porta viverra posuere adipiscing turpis.',
-  // },
-  // {
-  //   name: 'Learning',
-  //   description:
-  //     'Quisque sapien nunc nisl eros. Facilisis sagittis maecenas id dignissim tristique proin sed.',
-  // },
 ]
 
 export default function Policies({ data }) {
-  console.log(data)
   return (
     <Layout>
       {/* Hero */}

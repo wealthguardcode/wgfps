@@ -1,9 +1,8 @@
 import { useState } from 'react'
 import { ExternalLinkIcon, PhoneIcon } from '@heroicons/react/solid'
-import { UsersIcon } from '@heroicons/react/outline'
+
 import Layout from '../components/Layout'
 import Link from 'next/link'
-
 import dynamic from 'next/dynamic'
 
 const EstimateWidget = dynamic(() => import('../components/EstimateWidget'), {
@@ -205,7 +204,7 @@ export default function HomePage() {
             <div className="mt-8">
               <div className="inline-flex rounded-md shadow">
                 <Link href="/how-it-works">
-                  <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
+                  <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-blue-50">
                     Learn more
                     <ExternalLinkIcon
                       className="-mr-1 ml-3 h-5 w-5 text-gray-400"
@@ -267,7 +266,7 @@ export default function HomePage() {
                   alt=""
                 />
                 <div className="absolute inset-0 bg-blue-500 mix-blend-multiply" />
-                <div className="absolute inset-0 bg-gradient-to-t from-rose-600 via-rose-600 opacity-90" />
+                <div className="absolute inset-0 bg-gradient-to-t from-pink-600 via-pink-600 opacity-30" />
               </div>
             </div>
           </div>
@@ -287,9 +286,9 @@ export default function HomePage() {
               </div>
               <div className="py-8">
                 <div className="inline-flex rounded-md shadow float-right">
-                  <Link href="/estimate" passHref>
-                    <a className="inline-flex items-center justify-center px-5 py-3 border-2 border-blue-500 text-base font-medium rounded-md text-gray-900 bg-white hover:bg-blue-500 group-hover:text-white hover:border-transparent">
-                      Check my price
+                  <Link href="/estimate">
+                    <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-blue-50">
+                      Learn more
                       <ExternalLinkIcon
                         className="-mr-1 ml-3 h-5 w-5 text-gray-400"
                         aria-hidden="true"

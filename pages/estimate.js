@@ -8,39 +8,40 @@ const EstimateWidget = dynamic(() => import('../components/EstimateWidget'), {
 const faqs = [
   {
     id: 1,
-    question: "What's the best thing about the US?",
+    question: 'Do I need life insurance?',
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      'Not necessarily. If you have no children or dependents whom you support financially, you might not need a life insurance policy after all. Life insurance aims to provide a solution for those who seek income replacement, mortgage protection, estate planning, leaving a legacy, or burial expenses. However, if someone you love is dependent on you financially, you need life insurance.',
   },
   {
     id: 2,
-    question: "What's the best thing about the US?",
+    question: 'How Can I Save Money When Buying Life Insurance?',
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      'Buying a term life or a combination of term and whole life insurance may help you pay a lower premium. Buying a policy early in life is also a good way to ensure a lower premium.',
   },
   {
     id: 3,
-    question: "What's the best thing about the US?",
+    question: 'How does the insurance company determine my premium?',
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      'Premium rates are typically based on factors such as age, gender, height, weight, health status (including whether or not you use tobacco), and if you participate in high-risk activities or occupations.',
   },
   {
     id: 4,
-    question: "What's the best thing about the US?",
+    question: 'What is a term policy?',
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      'Term insurance plans cover you for a term of one or more years, and it pays a death benefit only if you die in that term. However, even if you don’t die within the term, you have not wasted your money any more than when you buy car insurance but never have an accident. You have bought yourself peace of mind that your beneficiaries will receive the death benefit if you should die within the term.',
   },
   {
     id: 5,
-    question: "What's the best thing about the US?",
+    question:
+      'Am I still eligible for coverage if I have a serious health condition?',
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      'Most plans do require medical testing and charge premiums based on the level of risk they assign to you based on the testing. However, even if you are not in top health or have a serious health condition, there are still some options available with guaranteed issue plans, although this comes at the cost of a higher monthly premium and a lower death benefit.',
   },
   {
     id: 6,
-    question: "What's the best thing about the US?",
+    question: 'How much life insurance do I need?',
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      'To determine how much life insurance you need, it’s best to look at your surviving family’s immediate, ongoing, and future financial obligations, and compare that with your financial resources.',
   },
 ]
 

@@ -24,7 +24,6 @@ export const getStaticProps = async ({ params }) => {
 }
 
 export default function PolicyPage({ policy }) {
-  console.log(policy)
   return (
     <Layout title={`WIG | ${policy.title}`}>
       <div className="bg-blue-200 lg:relative">
@@ -181,7 +180,6 @@ export default function PolicyPage({ policy }) {
           </div>
         </div>
       </div>
-      {/* <h1>{policy.title}</h1> */}
     </Layout>
   )
 }
