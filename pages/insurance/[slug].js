@@ -168,6 +168,8 @@ export default function PolicyPage({ policy }) {
               <div className="mt-8 inline-flex rounded-md shadow ml-4">
                 <a
                   href="tel:832-930-3827"
+                  target="_blank"
+                  rel="noreferrer"
                   className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50">
                   <PhoneIcon
                     className="-ml-0.5 mr-2 h-4 w-4"

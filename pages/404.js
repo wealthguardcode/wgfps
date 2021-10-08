@@ -14,9 +14,9 @@ export default function ErrorPage() {
                   <a className="inline-flex">
                     <span className="sr-only">Workflow</span>
                     <img
-                      className="h-12 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark.svg?color=blue&shade=600"
-                      alt=""
+                      className="mx-auto h-20 w-auto"
+                      src="/images/wig-logo-nobg.svg"
+                      alt="WealthGuard Logo"
                     />
                   </a>
                 </Link>
@@ -54,7 +54,9 @@ export default function ErrorPage() {
                   aria-hidden="true"
                 />
                 <a
-                  href="#"
+                  href="tel:832-930-3827"
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-sm font-medium text-gray-500 hover:text-gray-600">
                   <PhoneIcon
                     className="flex-shrink-0 h-6 w-6 text-gray-400"
@@ -66,7 +68,9 @@ export default function ErrorPage() {
                   aria-hidden="true"
                 />
                 <a
-                  href="#"
+                  href="mailto:service@wealthguardig.com"
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-sm font-medium text-gray-500 hover:text-gray-600">
                   <MailIcon
                     className="flex-shrink-0 h-6 w-6 text-gray-400"

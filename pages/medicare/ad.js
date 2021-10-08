@@ -155,55 +155,6 @@ export default function ADPage() {
                     </Link>
                     .
                   </p>
-                  {/* <ol role="list">
-                    <li>
-                      Health Maintenance Organizations (HMO) are health
-                      insurance plans that require a primary care physician and
-                      they act as the hub that links you to other doctors within
-                      the provider network.
-                    </li>
-                    <li>
-                      Preferred Provider Organizations (PPO) are more flexible
-                      than HMOs and allow you to see doctors as you please but
-                      doctors within the provider network will be significantly
-                      cheaper.
-                    </li>
-                    <li>
-                      Private Fee-for-Service (PFFS) plans are provided by
-                      private insurance companies. PFFS plans are not the same
-                      as Original Medicare. The plan will determine how much it
-                      will pay and how much you must pay for care and services.
-                      Some PFFS will have a network providers.
-                    </li>
-                    <li>
-                      Special Needs Plans (SNPs) are provided by private
-                      insurance companies but SNPs limit memberships to those
-                      with specific diseases or characteristics so plans can be
-                      specifically tailored a more focused group of individuals.
-                    </li>
-                  </ol>
-                  <p className="mt-0 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-2xl">
-                    When can I enroll in a Medicare Advantage plan?
-                  </p>
-                  <p>Medicare Advantage has 3 times to sign up.</p>
-                  <ol role="list">
-                    <li>
-                      Initial Election Period when you first become eligible for
-                      Medicare or when you turn 65. This is a 7-month period
-                      which includes the 3 months before the month you turn 65,
-                      the month you turn 65, and the 3 months following the
-                      month you turn 65.
-                    </li>
-                    <li>
-                      Medicare Annual Election Period which is from October 15-
-                      December 7 every year.
-                    </li>
-                    <li>
-                      Special Election Periods are when certain events cause you
-                      to lose coverage or gain additional benefits like moving
-                      or becoming eligible for Medicaid.
-                    </li>
-                  </ol> */}
 
                   <p className="mt-0 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl">
                     Part D
@@ -234,6 +185,8 @@ export default function ADPage() {
               <div className="mt-8 inline-flex rounded-md shadow ml-4">
                 <a
                   href="tel:832-930-3827"
+                  target="_blank"
+                  rel="noreferrer"
                   className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50">
                   <PhoneIcon
                     className="-ml-0.5 mr-2 h-4 w-4"
