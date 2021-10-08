@@ -150,11 +150,11 @@ export default function HomePage() {
 
       {/* Why WIG */}
       <div className="bg-gray-50">
-        <h2 className="sr-only">Why WIG?</h2>
+        <h2 className="sr-only">Why us?</h2>
         <div className="max-w-7xl mx-auto py-24 sm:px-2 sm:py-32 lg:px-4">
           <div className="max-w-3xl">
             <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 mb-6 pl-8">
-              Why WIG?
+              Why us?
             </h2>
           </div>
           <div className="max-w-2xl mx-auto px-4 grid grid-cols-1 gap-y-12 gap-x-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
