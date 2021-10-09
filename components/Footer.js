@@ -88,7 +88,7 @@ export default function Footer() {
                 /> */}
                 <img
                   className="h-12"
-                  src="/images/wig-logo.png"
+                  src="/images/wig-logo-full.png"
                   alt="WealthGuard Logo"
                 />
               </a>
