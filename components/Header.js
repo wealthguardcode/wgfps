@@ -106,13 +106,13 @@ export default function Header() {
                     <a>
                       <img
                         className="block lg:hidden h-12 w-auto"
-                        src="/images/wig-logo-nobg.svg"
+                        src="/images/wig-logo.png"
                         alt="WealthGuard Logo"
                       />
 
                       <img
                         className="hidden lg:block h-12 w-auto"
-                        src="/images/wig-logo-nobg.svg"
+                        src="/images/wig-logo.png"
                         alt="WealthGuard Logo"
                       />
                     </a>

@@ -75,7 +75,7 @@ export default function EstimatePage() {
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <img
             className="mx-auto h-20 w-auto"
-            src="/images/wig-logo-nobg.svg"
+            src="/images/wig-logo.png"
             alt="WealthGuard Logo"
           />
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">

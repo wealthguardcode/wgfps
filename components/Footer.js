@@ -1,4 +1,3 @@
-import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 
 const navigation = {
@@ -89,7 +88,7 @@ export default function Footer() {
                 /> */}
                 <img
                   className="h-12"
-                  src="/images/wig-logo-nobg.svg"
+                  src="/images/wig-logo.png"
                   alt="WealthGuard Logo"
                 />
               </a>
