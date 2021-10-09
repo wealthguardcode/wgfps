@@ -29,6 +29,7 @@ export default function PdfDownloadForm() {
         )
         .then(
           (result) => {
+            setSubmitted(true)
             toast('🎉 Message sent!', {
               position: 'top-right',
               autoClose: 5000,
@@ -44,7 +45,6 @@ export default function PdfDownloadForm() {
             alert(error.text)
           }
         )
-      setSubmitted(true)
       fun()
     }
   }
