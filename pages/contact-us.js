@@ -1,6 +1,7 @@
 import Layout from '../components/Layout'
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 import emailjs from 'emailjs-com'
+import { toast } from 'react-toastify'
 
 function fun() {
   document.getElementById('from_name').value = ''
@@ -23,7 +24,15 @@ function sendEmail(e) {
       )
       .then(
         (result) => {
-          alert('Message sent!')
+          toast('🎉 Message sent!', {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          })
           console.log(result.text)
         },
         (error) => {

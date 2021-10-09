@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
 import { DownloadIcon } from '@heroicons/react/solid'
+import { toast } from 'react-toastify'
 
 export default function PdfDownloadForm() {
   const [submitted, setSubmitted] = useState(false)
@@ -28,7 +29,15 @@ export default function PdfDownloadForm() {
         )
         .then(
           (result) => {
-            alert('Message sent!')
+            toast('🎉 Message sent!', {
+              position: 'top-right',
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            })
             console.log(result.text)
           },
           (error) => {
