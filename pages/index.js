@@ -243,12 +243,12 @@ export default function HomePage() {
                 <h2
                   className="text-3xl font-extrabold text-white"
                   id="join-heading">
-                  Meet our agents
+                  Meet our Partners
                 </h2>
                 <p className="text-lg text-white">
-                  Varius facilisi mauris sed sit. Non sed et duis dui leo,
-                  vulputate id malesuada non. Cras aliquet purus dui laoreet
-                  diam sed lacus, fames.
+                  <strong>Kimberly Mair</strong> the owner of Red Desert
+                  Insurance Agency LLC and is WGFPS partner for the states of
+                  Wyoming, Utah and Montana.
                 </p>
                 <Link href="/kim-mair">
                   <a className="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-blue-700 hover:bg-gray-50 sm:inline-block sm:w-auto">
