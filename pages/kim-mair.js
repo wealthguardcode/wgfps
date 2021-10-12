@@ -256,12 +256,12 @@ export default function KimMairPage() {
       <div className="bg-gray-900">
         <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-            <span className="block">Boost your productivity.</span>
-            <span className="block">Start using Workflow today.</span>
+            <span className="block">Rest easy knowing you&apos;re safe.</span>
           </h2>
           <p className="mt-4 text-lg leading-6 text-gray-200">
-            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-            Malesuada adipiscing sagittis vel nulla nec.
+            In little to no time, you could qualify for a policy that could
+            provide assistance for generations and help keep those you love
+            safe.
           </p>
         </div>
       </div>
@@ -380,7 +380,9 @@ export default function KimMairPage() {
                       className="flex-shrink-0 w-6 h-6 text-blue-200"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">+1 (555) 123-4567</span>
+                    <a href="tel:307-922-4883" target="_blank" rel="noreferrer">
+                      <span className="ml-3">307-922-4883</span>
+                    </a>
                   </dd>
                   <dt>
                     <span className="sr-only">Email</span>
@@ -390,7 +392,12 @@ export default function KimMairPage() {
                       className="flex-shrink-0 w-6 h-6 text-indigo-200"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">support@workcation.com</span>
+                    <a
+                      href="mailto:kim@wealthgaurdig.com"
+                      target="_blank"
+                      rel="noreferrer">
+                      <span className="ml-3">kim@wealthgaurdig.com</span>
+                    </a>
                   </dd>
                 </dl>
                 <ul role="list" className="mt-8 flex space-x-12">
