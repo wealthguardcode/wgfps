@@ -46,12 +46,12 @@ function sendEmail(e) {
 
 const people = [
   {
-    name: 'Kim Mair',
-    role: 'Lead Agent',
+    name: 'Kimberly Mair',
+    role: 'Owner of Red Desert Insurance LLC',
     imageUrl:
       'https://media.graphcms.com/output=format:jpg/resize=,height:800,fit:max/eYrEvAm5S9WE6VDOB5rA',
     bio:
-      'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+      'WGFPS partner for the states of Wyoming, Utah and Montana. She defines the work “professional” and provides superior service, competitive markets with cutting-edge technology. When not with her clients, you can find her in the country, exploring mother nature, implementing wild life management and giving back to the communities she serves.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -157,9 +157,11 @@ export default function KimMairPage() {
                     </p>
                   </div>
                   <footer className="mt-6">
-                    <p className="text-base font-medium text-white">Kim Mair</p>
+                    <p className="text-base font-medium text-white">
+                      Kimberly Mair
+                    </p>
                     <p className="text-base font-medium text-blue-100">
-                      Agent at WealthGuard
+                      Owner of Red Desert Insurance Agency LLC
                     </p>
                   </footer>
                 </blockquote>
