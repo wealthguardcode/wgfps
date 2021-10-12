@@ -79,7 +79,7 @@ const people = [
 
 export default function KimMairPage() {
   return (
-    <Layout>
+    <Layout title={'WIG || Kim Mair -  Red Desert Insurance LLC'}>
       {/* Hero */}
       <div className="lg:relative">
         <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
