@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import HeaderNav from './HeaderNav'
 
-import { Disclosure } from '@headlessui/react'
+import { Popover } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 import {
@@ -84,7 +84,7 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <Disclosure as="nav" className="bg-white shadow">
+    <Popover as="nav" className="bg-white shadow">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -92,14 +92,14 @@ export default function Header() {
               <div className="flex">
                 <div className="-ml-2 mr-2 flex items-center md:hidden">
                   {/* Mobile menu button */}
-                  <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                  <Popover.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
                       <XIcon className="block h-6 w-6" aria-hidden="true" />
                     ) : (
                       <MenuIcon className="block h-6 w-6" aria-hidden="true" />
                     )}
-                  </Disclosure.Button>
+                  </Popover.Button>
                 </div>
                 <div className="flex-shrink-0 flex items-center">
                   <Link href="/">
@@ -136,7 +136,7 @@ export default function Header() {
             </div>
           </div>
 
-          <Disclosure.Panel className="md:hidden absolute w-3/4 z-10">
+          <Popover.Panel className="md:hidden absolute w-3/4 z-10">
             <div className="pt-0 pb-3 space-y-1 ">
               <div className="flex flex-col flex-grow border-r border-gray-200 pt-2 pb-4 bg-white overflow-y-auto ">
                 <div className="mt-5 flex-grow flex flex-col">
@@ -167,13 +167,10 @@ export default function Header() {
                           </a>
                         </div>
                       ) : (
-                        <Disclosure
-                          as="div"
-                          key={item.name}
-                          className="space-y-1">
+                        <Popover as="div" key={item.name} className="space-y-1">
                           {({ open }) => (
                             <>
-                              <Disclosure.Button
+                              <Popover.Button
                                 className={classNames(
                                   item.current
                                     ? 'bg-gray-100 text-gray-900'
@@ -199,8 +196,8 @@ export default function Header() {
                                     fill="currentColor"
                                   />
                                 </svg>
-                              </Disclosure.Button>
-                              <Disclosure.Panel className="space-y-1">
+                              </Popover.Button>
+                              <Popover.Panel className="space-y-1">
                                 {item.children.map((subItem) => (
                                   <a
                                     key={subItem.name}
@@ -209,10 +206,10 @@ export default function Header() {
                                     {subItem.name}
                                   </a>
                                 ))}
-                              </Disclosure.Panel>
+                              </Popover.Panel>
                             </>
                           )}
-                        </Disclosure>
+                        </Popover>
                       )
                     )}
                   </nav>
@@ -246,9 +243,9 @@ export default function Header() {
                 </div>
               </div>
             </div>
-          </Disclosure.Panel>
+          </Popover.Panel>
         </>
       )}
-    </Disclosure>
+    </Popover>
   )
 }
