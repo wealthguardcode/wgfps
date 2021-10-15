@@ -246,9 +246,18 @@ export default function HomePage() {
                   Meet our Partners
                 </h2>
                 <p className="text-lg text-white">
-                  <strong>Kimberly Mair</strong> the owner of Red Desert
+                  <strong>Kimberly Mair</strong>, the owner of Red Desert
                   Insurance Agency LLC and is WGFPS partner for the states of
-                  Wyoming, Utah and Montana.
+                  Wyoming, Utah and Montana. She defines the work “professional”
+                  and provides superior service, competitive markets with
+                  cutting-edge technology. When not with her clients, you can
+                  find her in the country, exploring mother nature, implementing
+                  wild life management and giving back to the communities she
+                  serves.
+                </p>
+                <p className="text-lg text-white">
+                  If you are a insurance professional and would like to explore
+                  joining the Kimberly Mair team, click below.
                 </p>
                 <Link href="/kim-mair">
                   <a className="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-blue-700 hover:bg-gray-50 sm:inline-block sm:w-auto">
@@ -279,10 +288,10 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <h3 className="text-base md:text-lg font-medium text-gray-900">
+                  <h3 className="text-lg md:text-xl font-medium text-gray-900">
                     {perk.name}
                   </h3>
-                  <p className="mt-2 text-sm md:text-base text-gray-500">
+                  <p className="mt-2 text-sm md:text-lg text-gray-500">
                     {perk.description}
                   </p>
                 </div>
