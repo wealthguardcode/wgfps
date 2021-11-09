@@ -71,7 +71,7 @@ const people = [
     imageUrl:
       'https://media.graphcms.com/output=format:jpg/resize=,height:800,fit:max/2VtKDuTiijbnjT6BTQxQ',
     bio:
-      'Jaime is the founder of WealthGuard and is our Chief Financial Officer.   Jaime began her career early on as her farther, Johnny Graves, owned and operated an independent agency in Nacogdoches, Texas.  She founded WealthGuard with the principals of her dad, "provide the best experience to your clients and more importantly, get to know them".',
+      'Jaime is the founder of WealthGuard and is our Chief Financial Officer.   Jaime began her career early on as her father, Johnny Graves, owned and operated an independent agency in Nacogdoches, Texas.  She founded WealthGuard with the principals of her dad, "provide the best experience to your clients and more importantly, get to know them".',
     twitterUrl: '#',
     linkedinUrl: '#',
   },

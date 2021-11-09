@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { ExternalLinkIcon, PhoneIcon } from '@heroicons/react/solid'
 
 import Layout from '../components/Layout'
