@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import HeaderNav from './HeaderNav'
 
 import { Popover } from '@headlessui/react'
@@ -83,6 +85,16 @@ function classNames(...classes) {
 }
 
 export default function Header() {
+  const router = useRouter()
+  const [pathName, setPathName] = useState(router.pathname)
+
+  const newPathName = () => {
+    setPathName(router.pathname)
+  }
+
+  console.log(pathName)
+  console.log(router.asPath)
+
   return (
     <Popover as='nav' className='bg-white shadow'>
       {({ open }) => (
@@ -202,7 +214,13 @@ export default function Header() {
                                   <a
                                     key={subItem.name}
                                     href={subItem.href}
-                                    className='group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50'>
+                                    className={
+                                      router.asPath === subItem.href
+                                        ? 'group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-blue-600 rounded-md bg-gray-100'
+                                        : 'group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50'
+                                    }
+                                    onClick={newPathName}
+                                    pathname={pathName}>
                                     {subItem.name}
                                   </a>
                                 ))}
@@ -221,15 +239,15 @@ export default function Header() {
                         <a
                           href={item.href}
                           className={classNames(
-                            item.current
-                              ? 'bg-gray-100 text-gray-900'
+                            router.pathname === item.href
+                              ? 'bg-gray-100 text-blue-600'
                               : 'bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900',
                             'group w-full flex items-center pl-2 py-2 text-sm font-medium rounded-md'
                           )}>
                           <item.icon
                             className={classNames(
-                              item.current
-                                ? 'text-gray-500'
+                              router.pathname === item.href
+                                ? 'text-blue-600'
                                 : 'text-gray-400 group-hover:text-gray-500',
                               'mr-3 flex-shrink-0 h-6 w-6'
                             )}
