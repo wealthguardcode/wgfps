@@ -57,7 +57,7 @@ export default function Example() {
             <Popover.Button
               className={classNames(
                 open ? 'text-gray-900' : 'text-gray-500',
-                'group bg-white rounded-md inline-flex items-center mt-3 lg:mt-5 text-sm lg:text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                'group bg-white rounded-md inline-flex items-center mt-5 text-sm lg:text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
               )}>
               <span>Life Insurance</span>
               <ChevronDownIcon
@@ -103,7 +103,7 @@ export default function Example() {
             <Popover.Button
               className={classNames(
                 open ? 'text-gray-900' : 'text-gray-500',
-                'group bg-white rounded-md inline-flex items-center mt-3 lg:mt-5 text-sm lg:text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                'group bg-white rounded-md inline-flex items-center mt-5 text-sm lg:text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
               )}>
               <span>Medicare</span>
               <ChevronDownIcon
@@ -149,7 +149,7 @@ export default function Example() {
             <Popover.Button
               className={classNames(
                 open ? 'text-gray-900' : 'text-gray-500',
-                'group bg-white rounded-md inline-flex items-center mt-3 lg:mt-5 text-sm lg:text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                'group bg-white rounded-md inline-flex items-center mt-5 text-sm lg:text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
               )}>
               <Link href='/annuities'>
                 <a>
@@ -166,7 +166,7 @@ export default function Example() {
             <Popover.Button
               className={classNames(
                 open ? 'text-gray-900' : 'text-gray-500',
-                'group bg-white rounded-md inline-flex items-center mt-3 lg:mt-5 text-sm lg:text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                'group bg-white rounded-md inline-flex items-center mt-5 text-sm lg:text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
               )}>
               <Link href='/employee'>
                 <a>
