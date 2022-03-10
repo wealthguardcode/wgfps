@@ -15,7 +15,7 @@ export default function ErrorPage() {
                     <span className='sr-only'>Workflow</span>
                     <img
                       className='mx-auto h-20 w-auto'
-                      src='/images/wig-logo-full.png'
+                      src='/images/wig-logo.png'
                       alt='WealthGuard Logo'
                     />
                   </a>

@@ -84,50 +84,50 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <Popover as="nav" className="bg-white shadow">
+    <Popover as='nav' className='bg-white shadow'>
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between h-16">
-              <div className="flex">
-                <div className="-ml-2 mr-2 flex items-center md:hidden">
+          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+            <div className='flex justify-between h-16'>
+              <div className='flex'>
+                <div className='-ml-2 mr-2 flex items-center md:hidden'>
                   {/* Mobile menu button */}
-                  <Popover.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
-                    <span className="sr-only">Open main menu</span>
+                  <Popover.Button className='inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500'>
+                    <span className='sr-only'>Open main menu</span>
                     {open ? (
-                      <XIcon className="block h-6 w-6" aria-hidden="true" />
+                      <XIcon className='block h-6 w-6' aria-hidden='true' />
                     ) : (
-                      <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                      <MenuIcon className='block h-6 w-6' aria-hidden='true' />
                     )}
                   </Popover.Button>
                 </div>
-                <div className="flex-shrink-0 flex items-center">
-                  <Link href="/">
+                <div className='flex-shrink-0 flex items-center'>
+                  <Link href='/'>
                     <a>
                       <img
-                        className="block lg:hidden h-12 w-auto"
-                        src="/images/wig-logo.png"
-                        alt="WealthGuard Logo"
+                        className='block lg:hidden h-12 w-auto'
+                        src='/images/wig-logo.png'
+                        alt='WealthGuard Logo'
                       />
 
                       <img
-                        className="hidden lg:block h-12 w-auto"
-                        src="/images/wig-logo-full.png"
-                        alt="WealthGuard Logo"
+                        className='hidden lg:block h-12 w-auto'
+                        src='/images/wig-logo-full.svg'
+                        alt='WealthGuard Logo'
                       />
                     </a>
                   </Link>
                 </div>
-                <div className="hidden md:ml-6 md:flex md:space-x-8">
+                <div className='hidden md:ml-6 md:flex md:space-x-8'>
                   <HeaderNav />
                 </div>
               </div>
-              <div className="flex items-center">
-                <div className="flex-shrink-0">
-                  <Link href="/estimate" passHref>
+              <div className='flex items-center'>
+                <div className='flex-shrink-0'>
+                  <Link href='/estimate' passHref>
                     <button
-                      type="button"
-                      className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded text-white bg-blue-600 shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                      type='button'
+                      className='relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded text-white bg-blue-600 shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'>
                       <span>Quote Term Life Now</span>
                     </button>
                   </Link>
@@ -136,13 +136,13 @@ export default function Header() {
             </div>
           </div>
 
-          <Popover.Panel className="md:hidden absolute w-3/4 z-10">
-            <div className="pt-0 pb-3 space-y-1 ">
-              <div className="flex flex-col flex-grow border-r border-gray-200 pt-2 pb-4 bg-white overflow-y-auto ">
-                <div className="mt-5 flex-grow flex flex-col">
+          <Popover.Panel className='md:hidden absolute w-3/4 z-10'>
+            <div className='pt-0 pb-3 space-y-1 '>
+              <div className='flex flex-col flex-grow border-r border-gray-200 pt-2 pb-4 bg-white overflow-y-auto '>
+                <div className='mt-5 flex-grow flex flex-col'>
                   <nav
-                    className="flex-1 px-2 space-y-1 bg-white"
-                    aria-label="Sidebar">
+                    className='flex-1 px-2 space-y-1 bg-white'
+                    aria-label='Sidebar'>
                     {navigation.map((item) =>
                       !item.children ? (
                         <div key={item.name}>
@@ -161,13 +161,13 @@ export default function Header() {
                                   : 'text-gray-400 group-hover:text-gray-500',
                                 'mr-3 flex-shrink-0 h-6 w-6'
                               )}
-                              aria-hidden="true"
+                              aria-hidden='true'
                             />
                             {item.name}
                           </a>
                         </div>
                       ) : (
-                        <Popover as="div" key={item.name} className="space-y-1">
+                        <Popover as='div' key={item.name} className='space-y-1'>
                           {({ open }) => (
                             <>
                               <Popover.Button
@@ -178,10 +178,10 @@ export default function Header() {
                                   'group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500'
                                 )}>
                                 <item.icon
-                                  className="mr-3 flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500"
-                                  aria-hidden="true"
+                                  className='mr-3 flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500'
+                                  aria-hidden='true'
                                 />
-                                <span className="flex-1">{item.name}</span>
+                                <span className='flex-1'>{item.name}</span>
                                 <svg
                                   className={classNames(
                                     open
@@ -189,20 +189,20 @@ export default function Header() {
                                       : 'text-gray-300',
                                     'ml-3 flex-shrink-0 h-5 w-5 transform group-hover:text-gray-400 transition-colors ease-in-out duration-150'
                                   )}
-                                  viewBox="0 0 20 20"
-                                  aria-hidden="true">
+                                  viewBox='0 0 20 20'
+                                  aria-hidden='true'>
                                   <path
-                                    d="M6 6L14 10L6 14V6Z"
-                                    fill="currentColor"
+                                    d='M6 6L14 10L6 14V6Z'
+                                    fill='currentColor'
                                   />
                                 </svg>
                               </Popover.Button>
-                              <Popover.Panel className="space-y-1">
+                              <Popover.Panel className='space-y-1'>
                                 {item.children.map((subItem) => (
                                   <a
                                     key={subItem.name}
                                     href={subItem.href}
-                                    className="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50">
+                                    className='group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50'>
                                     {subItem.name}
                                   </a>
                                 ))}
@@ -214,8 +214,8 @@ export default function Header() {
                     )}
                   </nav>
                   <nav
-                    className="flex-1 px-2 space-y-1 bg-white"
-                    aria-label="Sidebar">
+                    className='flex-1 px-2 space-y-1 bg-white'
+                    aria-label='Sidebar'>
                     {nav2.map((item) => (
                       <div key={item.name}>
                         <a
@@ -233,7 +233,7 @@ export default function Header() {
                                 : 'text-gray-400 group-hover:text-gray-500',
                               'mr-3 flex-shrink-0 h-6 w-6'
                             )}
-                            aria-hidden="true"
+                            aria-hidden='true'
                           />
                           {item.name}
                         </a>
