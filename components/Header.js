@@ -92,9 +92,6 @@ export default function Header() {
     setPathName(router.pathname)
   }
 
-  console.log(pathName)
-  console.log(router.asPath)
-
   return (
     <Popover as='nav' className='bg-white shadow'>
       {({ open }) => (

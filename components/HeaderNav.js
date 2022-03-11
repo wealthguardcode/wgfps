@@ -1,4 +1,5 @@
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
+import { useRouter } from 'next/router'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import Link from 'next/link'
@@ -41,14 +42,20 @@ const medicare = [
   },
 ]
 
-const annuities = []
-const employee = []
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Example() {
+  const router = useRouter()
+  const [pathName, setPathName] = useState(router.pathname)
+
+  const newPathName = () => {
+    setPathName(router.pathname)
+  }
+
+
   return (
     <>
       <Popover className='relative'>
@@ -84,10 +91,14 @@ export default function Example() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className='-m-3 p-3 block rounded-md hover:bg-gray-50 transition ease-in-out duration-150'>
-                        <p className='text-base font-medium text-gray-900'>
-                          {item.name}
-                        </p>
+                        className={
+                          router.asPath === item.href
+                            ? '-m-3 p-3 block rounded-md text-blue-600 bg-gray-100 transition ease-in-out duration-150'
+                            : '-m-3 p-3 block rounded-md hover:bg-gray-50 transition ease-in-out duration-150'
+                        }
+                        onClick={newPathName}
+                        pathname={pathName}>
+                        <p className='text-base font-medium '>{item.name}</p>
                       </a>
                     ))}
                   </div>
@@ -130,10 +141,14 @@ export default function Example() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className='-m-3 p-3 block rounded-md hover:bg-gray-50 transition ease-in-out duration-150'>
-                        <p className='text-base font-medium text-gray-900'>
-                          {item.name}
-                        </p>
+                        className={
+                          router.asPath === item.href
+                            ? '-m-3 p-3 block rounded-md bg-gray-100 text-blue-600 transition ease-in-out duration-150'
+                            : '-m-3 p-3 block rounded-md hover:bg-gray-50 transition ease-in-out duration-150 text-gray-900'
+                        }
+                        onClick={newPathName}
+                        pathname={pathName}>
+                        <p className='text-base font-medium '>{item.name}</p>
                       </a>
                     ))}
                   </div>
@@ -144,15 +159,19 @@ export default function Example() {
         )}
       </Popover>
       <Popover className='relative'>
-        {({ open }) => (
+        {() => (
           <>
             <Popover.Button
               className={classNames(
-                open ? 'text-gray-900' : 'text-gray-500',
+                router.pathname === '/annuities'
+                  ? 'text-blue-600 hover:text-blue-700'
+                  : 'text-gray-500',
                 'group bg-white rounded-md inline-flex items-center mt-5 text-sm lg:text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
-              )}>
+              )}
+              onClick={newPathName}
+              pathname={pathName}>
               <Link href='/annuities'>
-                <a>
+                <a className=''>
                   <span>Annuities</span>
                 </a>
               </Link>
@@ -161,11 +180,13 @@ export default function Example() {
         )}
       </Popover>
       <Popover className='relative'>
-        {({ open }) => (
+        {() => (
           <>
             <Popover.Button
               className={classNames(
-                open ? 'text-gray-900' : 'text-gray-500',
+                router.pathname === '/employee'
+                  ? 'text-blue-600 hover:text-blue-700'
+                  : 'text-gray-500',
                 'group bg-white rounded-md inline-flex items-center mt-5 text-sm lg:text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
               )}>
               <Link href='/employee'>
