@@ -14,7 +14,7 @@ export default function ADPage() {
             <p className='mt-3 max-w-md mx-auto text-lg text-gray-700 sm:text-xl md:mt-5 md:max-w-3xl'>
               Assistance with the things you cannot always plan on. From
               inpatient or outpatient hospital stays to medical supplies and
-              perscription drugs.
+              prescription drugs.
             </p>
           </div>
         </div>
