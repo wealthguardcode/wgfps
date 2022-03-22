@@ -479,34 +479,34 @@ export default function KimMairPage() {
                       htmlFor='first-name'
                       className='block text-sm font-medium text-gray-900'>
                       Full Name
+                      <div className='mt-1'>
+                        <input
+                          type='text'
+                          id='from_name'
+                          name='from_name'
+                          autoComplete='name'
+                          required
+                          className='py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md'
+                        />
+                      </div>
                     </label>
-                    <div className='mt-1'>
-                      <input
-                        type='text'
-                        id='from_name'
-                        name='from_name'
-                        autoComplete='name'
-                        required
-                        className='py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md'
-                      />
-                    </div>
                   </div>
                   <div>
                     <label
                       htmlFor='email'
                       className='block text-sm font-medium text-gray-900'>
                       Email
+                      <div className='mt-1'>
+                        <input
+                          id='user_email'
+                          name='user_email'
+                          type='email'
+                          autoComplete='email'
+                          required
+                          className='py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md'
+                        />
+                      </div>
                     </label>
-                    <div className='mt-1'>
-                      <input
-                        id='user_email'
-                        name='user_email'
-                        type='email'
-                        autoComplete='email'
-                        required
-                        className='py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md'
-                      />
-                    </div>
                   </div>
                   <div className='sm:col-span-2'>
                     <div className='flex justify-between'>
@@ -522,14 +522,16 @@ export default function KimMairPage() {
                       </span>
                     </div>
                     <div className='mt-1'>
-                      <input
-                        type='text'
-                        id='user_phone'
-                        name='user_phone'
-                        autoComplete='tel'
-                        className='py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md'
-                        aria-describedby='phone-optional'
-                      />
+                      <label htmlFor='phone'>
+                        <input
+                          type='text'
+                          id='user_phone'
+                          name='user_phone'
+                          autoComplete='tel'
+                          className='py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md'
+                          aria-describedby='phone-optional'
+                        />
+                      </label>
                     </div>
                   </div>
 
@@ -545,14 +547,16 @@ export default function KimMairPage() {
                       </span>
                     </div>
                     <div className='mt-1'>
-                      <textarea
-                        id='message'
-                        name='message'
-                        rows={4}
-                        className='py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md'
-                        aria-describedby='message-max'
-                        defaultValue={''}
-                      />
+                      <label htmlFor='message'>
+                        <textarea
+                          id='message'
+                          name='message'
+                          rows={4}
+                          className='py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md'
+                          aria-describedby='message-max'
+                          defaultValue={''}
+                        />
+                      </label>
                     </div>
                   </div>
                   <div className='sm:col-span-2 sm:flex sm:justify-end'>
