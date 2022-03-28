@@ -49,7 +49,7 @@ const people = [
     name: 'Kimberly Mair',
     role: 'Owner of Red Desert Insurance LLC',
     imageUrl:
-      'https://media.graphcms.com/output=format:jpg/resize=,height:800,fit:max/eYrEvAm5S9WE6VDOB5rA',
+      'https://media.graphassets.com/output=format:jpg/resize=,height:800,fit:max/eYrEvAm5S9WE6VDOB5rA',
     bio: 'WGFPS partner for the states of Wyoming, Utah and Montana. She defines the work “professional” and provides superior service, competitive markets with cutting-edge technology. When not with her clients, you can find her in the country, exploring mother nature, implementing wild life management and giving back to the communities she serves.',
     twitterUrl: '#',
     linkedinUrl: '#',
@@ -58,7 +58,7 @@ const people = [
     name: 'Theresa Elkins',
     role: 'Contracting and Client Services',
     imageUrl:
-      'https://media.graphcms.com/output=format:jpg/resize=,height:800,fit:max/fUJNTDpTTLuS66I0hOGT',
+      'https://media.graphassets.com/output=format:jpg/resize=,height:800,fit:max/fUJNTDpTTLuS66I0hOGT',
     bio: 'Theresa has been with leadership for 10+ years and oversees our broker experience.  She ensures each broker appointed to our company has a smooth experience and is available to assist with any administrative need for you and your agency.',
     twitterUrl: '#',
     linkedinUrl: '#',
@@ -67,7 +67,7 @@ const people = [
     name: 'Jaime Calhoun',
     role: 'Accounting and Commissions',
     imageUrl:
-      'https://media.graphcms.com/output=format:jpg/resize=,height:800,fit:max/2VtKDuTiijbnjT6BTQxQ',
+      'https://media.graphassets.com/output=format:jpg/resize=,height:800,fit:max/2VtKDuTiijbnjT6BTQxQ',
     bio: 'Jaime is the founder of WealthGuard and is our Chief Financial Officer.   Jaime began her career early on as her father, Johnny Graves, owned and operated an independent agency in Nacogdoches, Texas.  She founded WealthGuard with the principals of her dad, "provide the best experience to your clients and more importantly, get to know them".',
     twitterUrl: '#',
     linkedinUrl: '#',
@@ -131,7 +131,7 @@ export default function KimMairPage() {
                 <div className='aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full'>
                   <img
                     className='object-cover lg:h-full lg:w-full'
-                    src='https://media.graphcms.com/output=format:jpg/resize=,height:800,fit:max/tHm5YqQZQampZQdC2KcA'
+                    src='https://media.graphassets.com/output=format:jpg/resize=,height:800,fit:max/tHm5YqQZQampZQdC2KcA'
                     alt=''
                   />
                 </div>
