@@ -11,29 +11,25 @@ const EstimateWidget = dynamic(() => import('../components/EstimateWidget'), {
 const perks = [
   {
     name: 'Local team members',
-    imageSrc:
-      'https://media.graphassets.com/output=format:png/resize=,height:800,fit:max/aGNe7lOtSnu3jybWyi0W',
+    imageSrc: '/images/home/team.jpeg',
     description:
       'We may be strong as individuals but together we are invincible. Local and here to help.',
   },
   {
     name: 'Instant quote',
-    imageSrc:
-      'https://media.graphassets.com/output=format:png/resize=,height:800,fit:max/6GDa58lQVuKX1KROF0fA',
+    imageSrc: '/images/home/insta-quote.jpeg',
     description:
       'Real time quoting data on rates and/or product changes to help you have the latest prices.',
   },
   {
     name: 'Worry-free',
-    imageSrc:
-      'https://media.graphassets.com/output=format:png/resize=,height:800,fit:max/zFJTjtcITV6ybZ1bAh6d',
+    imageSrc: '/images/home/worry-free.jpeg',
     description:
       'No worries, we’ve got you covered. Helping you attain your peace of mind.',
   },
   {
     name: 'Expert coverage',
-    imageSrc:
-      'https://media.graphassets.com/output=format:png/resize=,height:800,fit:max/LYN4OxQ7QtShPO4n0PG1',
+    imageSrc: '/images/home/rating.jpeg',
     description:
       'With years of industry experience, providing you with more time and money in your wallet.',
   },
@@ -164,7 +160,7 @@ export default function HomePage() {
                 <div className='aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1'>
                   <img
                     className='object-cover object-center rounded-3xl shadow-2xl'
-                    src='https://media.graphassets.com/output=format:jpg/resize=,height:800,fit:max/eYrEvAm5S9WE6VDOB5rA'
+                    src='/images/home/kim-close.jpeg'
                     alt='Kim Mair'
                   />
                 </div>

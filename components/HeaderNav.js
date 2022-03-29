@@ -16,7 +16,7 @@ const policies = [
 
   {
     name: 'Guaranteed Issue Whole Life Insurance',
-    href: '/insurance/guaranteed-issue-whole-life-insurance',
+    href: '/insurance/guaranteed',
   },
   {
     name: 'Mortgage Protection',
