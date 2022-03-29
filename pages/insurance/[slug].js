@@ -207,7 +207,7 @@ export async function getStaticPaths() {
     },
   }))
 
-  console.log(paths)
+  // console.log(paths)
 
   return {
     paths,
